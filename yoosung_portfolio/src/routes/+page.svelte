@@ -6,9 +6,9 @@
 
 </script>
 
-<Header />
+<!-- <Header /> -->
 
 <Home  />
 
 
-<Footer/>
+<!-- <Footer/> -->

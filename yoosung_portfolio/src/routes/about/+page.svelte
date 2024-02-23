@@ -7,7 +7,7 @@
 
 </script>
 
-<Header />
+<!-- <Header /> -->
 
 <About />
 
