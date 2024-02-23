@@ -2,7 +2,7 @@
 
 </script>
 
-<div class='w-screen items-center bg-green-600'>
+<div class='w-screen items-cente'>
     <div class='flex flex-row gap-x-10 px-10 max-auto'>
         <p class="basis-1/4"> lmao </p>
         <p class="basis-1/4"> this </p>
