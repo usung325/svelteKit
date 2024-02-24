@@ -1,85 +1,99 @@
 <script>
+    import SectionWrapper from "./SectionWrapper.svelte";
+
 
 </script>
 
-<body class="overscroll-behavior-x: auto;">
-    <div id = 'main'>
-        <div class="md:flex md:flex-row md:justify-center">
-            <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
-                <div class="flex flex-col justify-start max-w-xl px-8 py-24 ">
-                    <div class="flex flex-col gap-8 pb-8">
-                        <h1 class="inline-block mx-auto">This is my website</h1>
-                        
-                        <p class="inline-block text-gray-400 "> These are projects that I've current worked on for the past couple years.</p>
-                        
 
+<SectionWrapper>
+    <body class="overscroll-behavior-x: auto;">
+        <div id = 'main'>
+            <!-- <div class="md:flex md:flex-row md:justify-center">
+                <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
+                    <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
 
-                        <!-- this is content -->
-                        <div class="flex flex-col gap-6">
-                            <div class="contentBlock">
-                                <div class="flex flex-col gap-2">
-                                    <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-1">
-                                        <a href="/projects/stickq"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/stickq.png" ></a>
-
-                                    </div>
-                                    <div class="flex flex-col px-2">
-                                        <div class="flex flex-row justify-between md:-mx-24">
-                                            <p href="/projects"> NEEK Branding </p>
-                                            <p class="text-gray-400"> Illustration</p>
-                                        </div>
-                                        <p class="text-gray-400 md:-mx-24">2023</p>
-
-                                    </div>
-                                </div>
-
+                        <div class="mb-4">
+                            <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is Yoo Sung Lee and I'm a brand designer studying <a class="text-blue-600" href="https://design.cmu.edu/">Design@CMU</a>. I bringing visuals to life through illustrations and code. </p>
+                            <div class="grid py-1">
+                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
+                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
+                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
+                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
                             </div>
-
-                            <div class="contentBlock">
-                                <div class="flex flex-col gap-2">
-                                    <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-1">
-                                        <a href="/projects/lxd"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
-
-                                    </div>
-                                    <div class="flex flex-col px-2">
-                                        <div class="flex flex-row justify-between md:-mx-24">
-                                            <p> NEEK Branding </p>
-                                            <p class="text-gray-400"> Illustration</p>
-                                        </div>
-                                        <p class="text-gray-400 md:-mx-24">2023</p>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="contentBlock">
-                                <div class="flex flex-col gap-2">
-                                    <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-1">
-                                        <a href="/projects/neek"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/g.png"> </a>
-
-                                    </div>
-                                    <div class="flex flex-col px-2">
-                                        <div class="flex flex-row justify-between md:-mx-24">
-                                            <p> NEEK Branding </p>
-                                            <p class="text-gray-400"> Illustration</p>
-                                        </div>
-                                        <p class="text-gray-400 md:-mx-24">2023</p>
-
-                                    </div>
-                                </div>
-
-                            </div>
+                            
                         </div>
+                            
 
 
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
+                        <div class="flex flex-col gap-8 pb-8"> 
+                            <!-- this is content -->
+                            <div class="flex flex-col gap-6">
+                                <div class="contentBlock">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
+                                            <a href="/projects/stickq"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/stickq.png" ></a>
     
-</body>
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                            <div class="flex flex-row justify-between md:-mx-24">
+                                                <p href="/projects"> StickQ's </p>
+                                                <p class="text-gray-400"> Illustration, Branding, UIUX</p>
+                                            </div>
+                                            <p class="text-gray-400 md:-mx-24">2023</p>
+    
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="contentBlock">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
+                                            <a href="/projects/lxd"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
+    
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                            <div class="flex flex-row justify-between md:-mx-24">
+                                                <p> LXD Conference Rebrand </p>
+                                                <p class="text-gray-400"> Branding</p>
+                                            </div>
+                                            <p class="text-gray-400 md:-mx-24">2023</p>
+    
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="contentBlock">
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
+                                            <a href="/projects/neek"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/g.png"> </a>
+    
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                            <div class="flex flex-row justify-between md:-mx-24">
+                                                <p> NEEK Branding </p>
+                                                <p class="text-gray-400"> Illustration</p>
+                                            </div>
+                                            <p class="text-gray-400 md:-mx-24">2023</p>
+    
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+    
+    
+    
+                         </div>
+                    <!-- </div>
+                </div>
+            </div> -->
+            
+        </div>
+    
+        
+    </body>
+
+</SectionWrapper>
