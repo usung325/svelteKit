@@ -13,7 +13,7 @@
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
 
                         <div class="mb-4">
-                            <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is Yoo Sung Lee and I'm a brand designer studying <a class="text-blue-600" href="https://design.cmu.edu/">Design@CMU</a>. I bringing visuals to life through illustrations and code. </p>
+                            <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is <a href="https://design.cmu.edu/" class="text-blue-600">Yoo Sung Lee</a> and I'm a brand designer studying <a class="text-blue-600" href="https://design.cmu.edu/">Design @CMU</a>. I bring stories and missions to life through illustrations and code. </p>
                             <div class="grid py-1">
                                 <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
                                 <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
