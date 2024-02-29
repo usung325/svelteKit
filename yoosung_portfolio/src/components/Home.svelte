@@ -1,13 +1,19 @@
 <script>
+    import HoverStickQs from "./HoverStickQs.svelte";
     import SectionWrapper from "./SectionWrapper.svelte";
 
+
+    export let showOverlay = false;
 
 </script>
 
 
+
 <SectionWrapper>
     <body class="overscroll-behavior-x: auto;">
+        
         <div id = 'main'>
+            
             <!-- <div class="md:flex md:flex-row md:justify-center">
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
@@ -30,9 +36,22 @@
                             <div class="flex flex-col gap-6">
                                 <div class="contentBlock">
                                     <div class="flex flex-col gap-2">
-                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
-                                            <a href="/projects/stickq"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/stickq.png" ></a>
-    
+                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5" >
+
+
+                                            <a href="/projects/stickq" class="hover:z-10" on:mouseenter={() => showOverlay = true} on:mouseleave={() => showOverlay = false}>    
+                                            <img alt='stickq thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/stickq.png" ></a>
+<!--                                             
+                                            <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                                <HoverStickQs />
+                                            </div> -->
+                                            {#if showOverlay}
+                                                <div class="fixed inset-0 z-1 -my-16">
+                                                    <HoverStickQs />
+                                                </div>
+                                            {/if}
+
+
                                         </div>
                                         <div class="flex flex-col px-2">
                                             <div class="flex flex-row justify-between md:-mx-24">
