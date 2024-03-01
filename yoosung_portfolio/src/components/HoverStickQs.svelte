@@ -4,4 +4,4 @@
 </script>
 
 
-<img  alt="profile" src="/stickq/hover3.png" />  
+<img  alt="profile" src="/stickq/hoverStickq.png" />  

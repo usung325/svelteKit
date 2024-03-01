@@ -3,7 +3,7 @@
     import SectionWrapper from "./SectionWrapper.svelte";
 
     export let showOverlay = false;
-    import { fade } from 'svelte/transition';
+    import { fade, fly } from 'svelte/transition';
 
 </script>
 
@@ -18,7 +18,7 @@
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
 
-                        <div class="mb-4 z-20">
+                        <div in:fade = {{duration:600, delay:0}} class="mb-4 z-20">
                             <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="text-blue-600">Yoo Sung Lee</a> and I'm a brand designer studying <a target ="blank"  class="text-blue-600" href="https://design.cmu.edu/">Design @CMU</a>. I bring ideas to life through illustration and code. </p>
                             <div class="grid py-1">
                                 <a href="/design" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
@@ -36,7 +36,9 @@
                             <div class="flex flex-col gap-6">
                                 <div class="contentBlock">
                                     <div class="flex flex-col gap-2">
-                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5" >
+
+                                        <span in:fade = {{ duration:1000, delay:200}}>
+                                        <div in:fly  = {{ y: 200 ,duration:800, delay:100 }} class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5" >
 
 
                                             <a href="/projects/stickq" class="hover:z-10" on:mouseenter={() => showOverlay = true} on:mouseleave={() => showOverlay = false}>    
@@ -50,10 +52,10 @@
                                                     <HoverStickQs />
                                                 </div>
                                             {/if}
-
-
                                         </div>
-                                        <div class="flex flex-col px-2">
+                                        </span>
+
+                                        <div in:fly = {{ y: 200 ,duration:800, delay:200 }} class="flex flex-col px-2">
                                             <div class="flex flex-row justify-between md:-mx-24">
                                                 <p href="/projects"> StickQ's </p>
                                                 <p class="text-gray-400"> Illustration, Branding, UIUX</p>
@@ -64,8 +66,9 @@
                                     </div>
     
                                 </div>
-    
-                                <div class="contentBlock">
+
+                                <span in:fade = {{ duration:1000, delay:200}}>
+                                <div in:fly = {{ y: 200, duration: 1000, delay:200}} class="contentBlock">
                                     <div class="flex flex-col gap-2">
                                         <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
                                             <a href="/projects/lxd"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
@@ -82,6 +85,7 @@
                                     </div>
     
                                 </div>
+                                </span>
     
                                 <div class="contentBlock">
                                     <div class="flex flex-col gap-2">
