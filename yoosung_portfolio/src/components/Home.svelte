@@ -2,8 +2,8 @@
     import HoverStickQs from "./HoverStickQs.svelte";
     import SectionWrapper from "./SectionWrapper.svelte";
 
-
     export let showOverlay = false;
+    import { fade } from 'svelte/transition';
 
 </script>
 
@@ -18,13 +18,13 @@
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
 
-                        <div class="mb-4">
-                            <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is <a href="https://design.cmu.edu/" class="text-blue-600">Yoo Sung Lee</a> and I'm a brand designer studying <a class="text-blue-600" href="https://design.cmu.edu/">Design @CMU</a>. I bring stories and missions to life through illustrations and code. </p>
+                        <div class="mb-4 z-20">
+                            <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="text-blue-600">Yoo Sung Lee</a> and I'm a brand designer studying <a target ="blank"  class="text-blue-600" href="https://design.cmu.edu/">Design @CMU</a>. I bring ideas to life through illustration and code. </p>
                             <div class="grid py-1">
-                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
-                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
-                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
-                                <a href="/" class="text-sm text-blue-600 "> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
+                                <a href="/design" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
+                                <a href="/illustration" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
+                                <a href="/photography" class="text-sm text-blue-600 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
+                                <a href="/code" class="text-sm text-blue-600 "> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
                             </div>
                             
                         </div>
@@ -46,7 +46,7 @@
                                                 <HoverStickQs />
                                             </div> -->
                                             {#if showOverlay}
-                                                <div class="fixed inset-0 z-1 -my-16">
+                                                <div class="fixed inset-0 z-1 -my-16 " transition:fade={{ delay: 0, duration: 300 }}>
                                                     <HoverStickQs />
                                                 </div>
                                             {/if}
