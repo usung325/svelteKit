@@ -15,8 +15,11 @@
                         </div>
                         <div class="flex flex-col gap-8 pb-8">
                             
-                            <p class="text-gray-600"><span class="text-xl"> Hello! </span> <br/> My name is Yoo Sung Lee and I'm a brand designer studying @ Carnegie Mellon University. I bringing visuals to life through illustrations and code. </p>  
-                            <img  alt="profile" src="/stickq.png" />  
+                            <p class="text-gray-600"><span class="text-xl"> StickQ's </span> <br/> StickQ's is a interactive sticker based webapp that aims to help college students build consistent mindful practices.</p>  
+                            <img  alt="profile" src="/stickq/banner.png" />  
+                            <p> It uses NFC powered stickers to track custom activities on a public calander.</p>
+
+                            <img alt="other" src="/stickq/frog2.png" width=200em class="mx-auto"/>
                             
                             <a class=" text-blue-400 hover:text-black" href="https://www.linkedin.com/in/yoosung2/">Contact Me</a>
                         </div>

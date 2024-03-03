@@ -12,3 +12,18 @@ span{
     font-family:inherit;
     font-size:inherit;
 }
+
+
+@font-face {
+    font-family: 'Arizona';
+    src: url('/static/ABCArizonaSerif-Regular-Trial.woff2') format('woff2'),
+         url('/static/ABCArizonaSerif-Regular-Trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* add font-ABC in class to use */
+}
+
+
+p{
+    /* font-family: 'Arizona'; */
+}

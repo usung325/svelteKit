@@ -5,6 +5,18 @@
     export let showOverlay = false;
     import { fade, fly } from 'svelte/transition';
 
+    import { onMount } from 'svelte';
+
+
+    let runTransition = false;
+    onMount(() => runTransition = true);
+
+   let shown = false;
+    onMount(() => {
+		setTimeout(() => {console.log('waiting'); shown = true}, 1000);
+	});
+
+
 </script>
 
 
@@ -17,7 +29,7 @@
             <!-- <div class="md:flex md:flex-row md:justify-center">
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
-
+                        {#if runTransition}
                         <div in:fade = {{duration:600, delay:0}} class="mb-4 z-20">
                             <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="text-blue-600">Yoo Sung Lee</a> and I'm a brand designer studying <a target ="blank"  class="text-blue-600" href="https://design.cmu.edu/">Design @CMU</a>. I bring ideas to life through illustration and code. </p>
                             <div class="grid py-1">
@@ -41,13 +53,22 @@
                                         <div in:fly  = {{ y: 200 ,duration:800, delay:100 }} class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5" >
 
 
+
+
+
+
+
+
+
+
+                                            
                                             <a href="/projects/stickq" class="hover:z-10" on:mouseenter={() => showOverlay = true} on:mouseleave={() => showOverlay = false}>    
                                             <img alt='stickq thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/stickq.png" ></a>
 <!--                                             
                                             <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
                                                 <HoverStickQs />
                                             </div> -->
-                                            {#if showOverlay}
+                                            {#if showOverlay && shown}
                                                 <div class="fixed inset-0 z-1 -my-16 " transition:fade={{ delay: 0, duration: 300 }}>
                                                     <HoverStickQs />
                                                 </div>
@@ -110,6 +131,7 @@
     
     
                          </div>
+                        {/if}
                     <!-- </div>
                 </div>
             </div> -->

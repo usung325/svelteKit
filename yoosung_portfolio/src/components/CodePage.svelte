@@ -20,8 +20,6 @@
                         <img alt='pattern gif' src="/coding/pattern.gif"/>
                     </div>
                     
-
-                    
                     <div class="flex flex-wrap">
                         <div class="w-full">
                             <p> Living Pattern Generator</p>
@@ -45,7 +43,7 @@
 
                     <div>
                         <p> Valentines ml mediapipe</p>
-                        <img alt='ml gif' src="/coding/ml.gif"/>
+                        <img alt='ml gif' src="/coding/ml2.gif"/>
                     </div>
                     
                     <div>
