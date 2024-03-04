@@ -21,6 +21,25 @@
 
                             <img alt="other" src="/stickq/frog2.png" width=200em class="mx-auto"/>
                             
+
+                            <img alt="other" src="/stickq/ux2.png" class="mx-auto"/>
+
+                            <p> We included a notification system to nudge more activity and community engagement. </p>
+
+                            <img alt="other" src="/stickq/ux1.png" class="mx-auto"/>
+
+                            <div class="">
+                                <p> And the main user flow goes with: </p>
+                                <p> 1) You use the NFC sticker to log your activity</p>
+                                <p> 2) Rate your activty on a scale</p>
+                                <p> 3) Followed to the main calander page that loggs all of you and your community's activities</p>
+                                <p> 4) Find a sense of acheivement and engagement alongisde your community's efforts</p>
+
+                            </div>
+                            
+
+
+
                             <a class=" text-blue-400 hover:text-black" href="https://www.linkedin.com/in/yoosung2/">Contact Me</a>
                         </div>
     

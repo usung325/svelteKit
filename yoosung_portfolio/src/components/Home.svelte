@@ -16,7 +16,8 @@
 		setTimeout(() => {console.log('waiting'); shown = true}, 1000);
 	});
 
-
+    let isMouseOver = false;
+    let isMouseOver2 = false;
 </script>
 
 
@@ -30,13 +31,42 @@
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
                         {#if runTransition}
-                        <div in:fade = {{duration:600, delay:0}} class="mb-4 z-20">
-                            <p class="inline-block text-slate-600"><span class="text-xl text-black"> Hello! </span> <br> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="text-blue-600">Yoo Sung Lee</a> and I'm a brand designer studying <a target ="blank"  class="text-blue-600" href="https://design.cmu.edu/">Design @CMU</a>. I bring ideas to life through illustration and code. </p>
-                            <div class="grid py-1">
-                                <a href="/design" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
-                                <a href="/illustration" class="text-sm text-blue-600 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
-                                <a href="/photography" class="text-sm text-blue-600 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
-                                <a href="/code" class="text-sm text-blue-600 "> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
+                        <div in:fade = {{duration:800, delay:0}} class="mb-4 z-20 max-w-[90%] ">
+                            <h1 class="inline-block text-slate-700 "> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="hover:text-blue-500"> <span style="font-family: Arizona Bold">Yoo Sung Lee</span></a> 
+                                and I'm a brand designer studying <a target ="blank"  class="hover:text-blue-500" href="https://design.cmu.edu/"><span style="font-family: Arizona Bold">Design @CMU</span></a>. I bring ideas to life through
+                                <span role="tooltip" style="font-family: Arizona Bold" on:mouseover={() => (isMouseOver = true)} on:mouseout={() => (isMouseOver = false)}> 
+                                    
+                                    {#if isMouseOver}
+                                        <span class="text-blue-500">art</span>
+                                    {:else}
+                                    <i class="fa-solid fa-pencil"></i> 
+                                    {/if}  
+                                        
+                                    </span> and 
+                                    
+                                <span role="tooltip" style="font-family: Arizona Bold"  on:mouseover={() => (isMouseOver2 = true)} on:mouseout={() => (isMouseOver2 = false)} class=""> 
+                                    
+                                    {#if isMouseOver2}
+                                        <span class="text-blue-500">code.</span>
+                                    {:else}
+                                    <i class="fa-solid fa-bug"></i> <i class="fa-solid fa-terminal"></i> .
+                                    {/if}  
+                                     </span> </h1>
+
+
+                            <div class="flex flex-row py-5 justify-between">
+                                <div>
+                                    <a href="/design" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
+                                </div>
+                                <div>
+                                    <a href="/illustration" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
+                                </div>
+                                <div>
+                                    <a href="/photography" class=" hover:text-blue-500 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
+                                </div>
+                                <div>
+                                    <a href="/code" class=" hover:text-blue-500"> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
+                                </div>
                             </div>
                             
                         </div>

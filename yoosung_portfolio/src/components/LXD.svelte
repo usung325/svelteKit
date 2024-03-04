@@ -15,7 +15,9 @@
                             <div class="z-10 col-start-1 row-start-1">
                                 <a href="/" class="text-blue-400 text-sm">YSL</a>
                             </div>
-                            <div class="flex flex-col gap-8 pb-8">
+
+
+                            <div class="flex flex-col gap-8 pb-8 ">
                                 
                                 <p class="text-gray-600"><span class="text-xl"> LXD Con Branding </span> <br/> My name is Yoo Sung Lee and I'm a brand designer studying @ Carnegie Mellon University. I bringing visuals to life through illustrations and code. </p>  
                                 <img  alt="profile" src="/lxd.png" />  

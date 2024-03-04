@@ -4,8 +4,9 @@
 
 
 html{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Open Sans', sans-serif;
     font-size:medium;
+    font-weight:300;
 }
 
 span{
@@ -13,17 +14,31 @@ span{
     font-size:inherit;
 }
 
+h1 {
+    font-family:'Arizona', sans-serif;
+    font-size:1.5em;
+}
+
+h2 {
+    font-family:"Arizona Bold", sans-serif;
+    font-size:1em;
+}
 
 @font-face {
     font-family: 'Arizona';
-    src: url('/static/ABCArizonaSerif-Regular-Trial.woff2') format('woff2'),
-         url('/static/ABCArizonaSerif-Regular-Trial.woff') format('woff');
+    src: url('./public/ABCArizonaSerif-Thin-Trial.woff2') format('woff2'),
+         url('./public/ABCArizonaSerif-Thin-Trial.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     /* add font-ABC in class to use */
 }
 
-
-p{
-    /* font-family: 'Arizona'; */
+@font-face {
+    font-family: 'Arizona Bold';
+    src: url('./public/ABCArizonaSerif-Regular-Trial.woff2') format('woff2'),
+         url('./public/ABCArizonaSerif-Regular-Trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* add font-ABC in class to use */
 }
+
