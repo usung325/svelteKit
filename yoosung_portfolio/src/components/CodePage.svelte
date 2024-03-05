@@ -11,6 +11,8 @@
             <div class="z-10 col-start-1 row-start-1">
                     <a href="/" class="text-blue-400 text-sm">Home</a>
                 </div>
+                
+                    
                 <div class="flex flex-col gap-8 pb-8">
                     
                     <p class="text-gray-600"><span class="text-xl"> Creative Coding</span> <br/> These are small weekly sketches that I made for classes, fun, and capstone. </p>  
