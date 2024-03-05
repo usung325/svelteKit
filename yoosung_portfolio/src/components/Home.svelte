@@ -31,7 +31,7 @@
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
                         {#if runTransition}
-                        <div in:fade = {{duration:800, delay:0}} class="mb-4 z-20 max-w-[90%] ">
+                        <div in:fade = {{duration:1000, delay:0}} class="mb-4 z-20 max-w-[90%] ">
                             <h1 class="inline-block text-slate-700 "> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="hover:text-blue-500"> <span style="font-family: Arizona Bold">Yoo Sung Lee</span></a> 
                                 and I'm a brand designer studying <a target ="blank"  class="hover:text-blue-500" href="https://design.cmu.edu/"><span style="font-family: Arizona Bold">Design @CMU</span></a>. I bring ideas to life through
                                 <span role="tooltip" style="font-family: Arizona Bold" on:mouseover={() => (isMouseOver = true)} on:mouseout={() => (isMouseOver = false)}> 
@@ -54,6 +54,12 @@
                                      </span> </h1>
 
 
+
+
+
+
+
+
                             <div class="flex flex-row py-5 justify-between">
                                 <div>
                                     <a href="/design" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
@@ -72,6 +78,11 @@
                         </div>
                             
 
+
+
+
+
+                        
 
                         <div class="flex flex-col gap-8 pb-8"> 
                             <!-- this is content -->
@@ -138,7 +149,8 @@
                                 </div>
                                 </span>
     
-                                <div class="contentBlock">
+                                <span in:fade = {{ duration:1000, delay:200}}>
+                                <div in:fly = {{ y: 200, duration: 1000, delay:200}} class="contentBlock">
                                     <div class="flex flex-col gap-2">
                                         <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
                                             <a href="/projects/neek"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/g.png"> </a>
@@ -155,6 +167,7 @@
                                     </div>
     
                                 </div>
+                                </span>
                             </div>
     
     
