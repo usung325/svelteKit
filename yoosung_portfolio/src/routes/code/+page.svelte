@@ -1,5 +1,5 @@
 <script>
-    import CodePage from "../../components/Blank.svelte";
+    import CodePage from "../../components/CodePage.svelte";
 
 
 
