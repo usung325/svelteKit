@@ -11,6 +11,8 @@
             <div class="z-10 col-start-1 row-start-1">
                     <a href="/" class="text-blue-400 text-sm">Home</a>
                 </div>
+
+                
                 
                     
                 <div class="flex flex-col gap-8 pb-8">
@@ -47,7 +49,6 @@
                         <p> Valentines ml mediapipe</p>
                         <img alt='ml gif' src="/coding/ml2.gif"/>
                     </div>
-                    
                     <div>
                         <p>Camera Painter</p>
                         <div class="flex flex-wrap">

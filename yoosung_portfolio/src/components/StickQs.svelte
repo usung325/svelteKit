@@ -1,9 +1,13 @@
 <script>
     import FootSpace from "./FootSpace.svelte";
-import ImageWrapper from "./ImageWrapper.svelte";
+    import FsContainer from "./FsContainer.svelte";
+    import ImageWrapper from "./ImageWrapper.svelte";
     import SectionWrapper from "./SectionWrapper.svelte";
 
     let stickers = ['cat', 'dog', 'frog4', 'mouse'];
+    import isFull from "./FsContainer.svelte";
+
+    let sB = Array.from({ length: 28 }, (_, i) => i + 1);
 
     
 </script>
@@ -31,6 +35,8 @@ import ImageWrapper from "./ImageWrapper.svelte";
                                     <p> <i class="fa-solid fa-toolbox"></i> Procreate, Photoshop, Illustrator, Figma </p>
                                     <p> <i class="fa-solid fa-wand-magic-sparkles"></i> Visual Identity, UIUX, Logo Design, Branding</p>
                                 </div>
+
+                        
                             
                         <ImageWrapper>
                             <img  alt="profile" src="/stickq/banner.png" width="2400" height="1260" class="rounded-sm"/>  
@@ -44,6 +50,13 @@ import ImageWrapper from "./ImageWrapper.svelte";
 
                             <div class="-mb-6 mt-6">
                                 <h2 class=""><i class="fa-solid fa-spinner"></i> Process</h2>
+                            </div>
+
+
+                            <div class="grid grid-cols-6 gap-4">
+                                {#each sB as num}
+                                    <img alt="sketchbook page" src="/stickq/web/{num}.jpg">
+                                {/each}
                             </div>
 
                             <p> After deciding on the color pallette as a team, I moved on to establish a brand system that works well with the theme of fun collaboration and activity tracking. </p>
