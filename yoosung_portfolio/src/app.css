@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
 
 html{
     font-family:'Open Sans', sans-serif;
