@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       cursor: {
-        default: 'url(./src/public/cursor1.png), default',
-        pointer: 'url(./src/public/cursor1.png), pointer',
+        default: 'url(./src/public/cursor5.png), default',
+        pointer: 'url(./src/public/cursor4.png), pointer',
       },
     },
   },
