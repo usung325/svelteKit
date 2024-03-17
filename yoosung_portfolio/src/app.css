@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
+/* *,
 *:before,
 *:after {
   @apply cursor-default;
-}
+} */
+
+/* to add cursor, just uncomment these */
 
 html{
     font-family:'Open Sans', sans-serif;
