@@ -109,7 +109,7 @@
                                                 <HoverStickQs />
                                             </div> -->
                                             {#if showOverlay && shown}
-                                                <div class="fixed inset-0 z-1 my-0 " transition:fade={{ delay: 0, duration: 300 }}>
+                                                <div class="fixed inset-0 z-1 my-0" transition:fade={{ delay: 0, duration: 300 }}>
                                                     <HoverStickQs />
                                                 </div>
                                             {/if}
