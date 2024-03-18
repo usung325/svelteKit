@@ -3,6 +3,9 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      future: {
+        hoverOnlyWhenSupported: true,
+     },
       screens: {
         'hover-hover': {'raw': '(hover: hover)'},
       },
