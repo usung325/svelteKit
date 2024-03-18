@@ -7,7 +7,6 @@
 
     import { onMount } from 'svelte';
 
-
     let runTransition = false;
     onMount(() => runTransition = true);
 
