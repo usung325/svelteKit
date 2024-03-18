@@ -121,13 +121,13 @@
                             <p> This project was extremely meaningful in both learning to leverage each team member's skills and thinking critically about what it means to design an interaction.</p>
 
 
-                            <div class="">
-                                <div class="flex -space-x-14">
-                                        {#each stickers as sticker}
-                                            <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=140em/>
-                                        {/each}
-                                </div>
+
+                            <div class="flex -space-x-14 justify-center">
+                                    {#each stickers as sticker}
+                                        <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=130em/>
+                                    {/each}
                             </div>
+
 
                         
                             <!-- <p class="">That's it!</p> -->
