@@ -6,6 +6,14 @@
     import { fade, fly } from 'svelte/transition';
 
     import { onMount } from 'svelte';
+    import { createPhysicsEngine } from "$lib/matterHome.js";
+
+    let canvasContainer;
+
+    onMount(() => {
+        createPhysicsEngine(canvasContainer);
+        
+    });
 
     let runTransition = false;
     onMount(() => runTransition = true);
@@ -23,6 +31,8 @@
 
 <SectionWrapper>
     <body class="overscroll-behavior-x: auto;">
+        <div class="fixed inset-0 z-[-100] my-0" id="canvas-container" bind:this={canvasContainer}>
+        </div>
         
         <div id = 'main'>
             
@@ -115,6 +125,8 @@
                                             {/if}
                                         </div>
                                         </span>
+
+                                        
 
                                         <div in:fly = {{ y: 200 ,duration:800, delay:200 }} class="flex flex-col px-2">
                                             <div class="flex flex-row justify-between md:-mx-24">
