@@ -1,17 +1,6 @@
-<!-- <script>
-    import { createPhysicsEngine } from '$lib/matter.js';
-    import { onMount } from 'svelte';
-    import { Matter } from 'matter-js';
-  
-    // Initialize the physics engine when the component mounts
-    onMount(() => {
-        createPhysicsEngine();
-    });
-
-</script> -->
 <script>
-    import { onMount, onDestroy } from "svelte";
-    import { createPhysicsEngine } from "$lib/matter.js";
+    import { onMount } from "svelte";
+    import { createPhysicsEngine } from "../lib/matter";
 
     let canvasContainer;
 
