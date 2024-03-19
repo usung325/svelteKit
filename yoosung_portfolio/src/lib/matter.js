@@ -16,7 +16,7 @@ export function createPhysicsEngine(element) {
         element: element,
         engine: engine,
         options: {
-            width: 600,
+            width: 500,
             height: 300
         }
     });

@@ -6,9 +6,7 @@
 
     let stickers = ['cat', 'dog', 'frog4', 'mouse'];
     import isFull from "./FsContainer.svelte";
-    // import LxdMatter from "./LXDMatter.svelte";
 
-    // let iter = Array.from({ length: 5 }, (_, i) => i + 1);
     let iter = ['iter1', 'iter2', 'iter3', 'iter4'];
     let iter2 = ['iter1.1', 'iter2.1', 'iter3.1', 'iter4.1'];
     let iter3 = ['iter1.2', 'iter2.2', 'iter3.2', 'iter4.2'];
@@ -131,7 +129,7 @@
                                         <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=130em/>
                                     {/each}
                             </div> -->
-                            <div class="max-w-[50%]">
+                            <div class="flex justify-center">
                                 <div id="canvas-container" bind:this={canvasContainer}>
                                 </div>
                             </div>
