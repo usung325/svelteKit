@@ -34,7 +34,7 @@ export function createPhysicsEngine(element) {
 
     let boxA = Bodies.rectangle(200, 200, 80, 80);
     let boxB = Bodies.rectangle(250, 50, 80, 80);
-    let ground = Bodies.rectangle(900, 960, 2000, 100, { 
+    let ground = Bodies.rectangle(900, 960, 2000, 80, { 
         isStatic: true,
         render: {
             fillStyle: '#1462f5'
