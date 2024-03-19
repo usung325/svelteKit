@@ -51,22 +51,29 @@ export function createPhysicsEngine(element) {
 
 
 
-    let stack = Matter.Composites.stack(25, -660, 4, 4, 5, 100, function(x,y){
-        let sides = Math.floor((Math.random() * 5) + 3);
-        return Matter.Bodies.polygon(x, y, sides, 50, {
-            render: {
-                // fillStyle: arrColor[randIndex]
-            }
-        });
-    });
-
-    let stack2 = Matter.Composites.stack(1150, -660, 4, 4, 5, 100, function(x,y){
+    let stack = Matter.Composites.stack(25, -920, 4, 4, 5, 100, function(x,y){
         // let sides = Math.floor((Math.random() * 5) + 3);
         // return Matter.Bodies.polygon(x, y, sides, 50, {
         //     render: {
-        //         // fillStyle: '#fff152'
+        //         // fillStyle: arrColor[randIndex]
         //     }
         // });
+        let listVerts = [[
+            {x : 18 , y : 195},
+            {x : 18 , y : 16},
+            {x : 107 , y : 195}
+        ],[
+            {x : 261 , y : 154},
+            {x : 292 , y : 186},
+            {x : 229 , y : 249},
+            {x : 198 , y : 218},
+            {x : 198 , y : 154}
+        ],[
+            {x : 198 , y : 195},
+            {x : 153 , y : 151},
+            {x : 197 , y : 105}
+        ]]
+
         let vertices = [
             {x : 18 , y : 195},
             {x : 18 , y : 16},
@@ -74,15 +81,67 @@ export function createPhysicsEngine(element) {
         ]
 
         let vertices2 = [
-            {x : 320 , y : 189},
-            {x : 383 , y : 253},
-            {x : 256 , y : 380},
-            {x : 193 , y : 316},
-            {x : 193 , y : 189}
+            {x : 198 , y : 195},
+            {x : 153 , y : 151},
+            {x : 197 , y : 105}
         ]
 
-        return Matter.Bodies.fromVertices(x, y, vertices);
+        let vertices3 = [
+            {x : 261 , y : 154},
+            {x : 292 , y : 186},
+            {x : 229 , y : 249},
+            {x : 198 , y : 218},
+            {x : 198 , y : 154}
+        ]
+        return Matter.Bodies.fromVertices(x, y, listVerts[Math.floor((Math.random() * 3))]);
     });
+
+    let stack2 = Matter.Composites.stack(1150, -920, 4, 4, 5, 100, function(x,y){
+        // let sides = Math.floor((Math.random() * 5) + 3);
+        // return Matter.Bodies.polygon(x, y, sides, 50, {
+        //     render: {
+        //         // fillStyle: '#fff152'
+        //     }
+        // });
+
+        let listVerts = [[
+            {x : 18 , y : 195},
+            {x : 18 , y : 16},
+            {x : 107 , y : 195}
+        ],[
+            {x : 198 , y : 195},
+            {x : 153 , y : 151},
+            {x : 197 , y : 105}
+        ],[
+            {x : 261 , y : 154},
+            {x : 292 , y : 186},
+            {x : 229 , y : 249},
+            {x : 198 , y : 218},
+            {x : 198 , y : 154}
+        ]]
+
+        let vertices = [
+            {x : 18 , y : 195},
+            {x : 18 , y : 16},
+            {x : 107 , y : 195}
+        ]
+
+        let vertices2 = [
+            {x : 198 , y : 195},
+            {x : 153 , y : 151},
+            {x : 197 , y : 105}
+        ]
+
+        let vertices3 = [
+            {x : 261 , y : 154},
+            {x : 292 , y : 186},
+            {x : 229 , y : 249},
+            {x : 198 , y : 218},
+            {x : 198 , y : 154}
+        ]
+        return Matter.Bodies.fromVertices(x, y, listVerts[Math.floor((Math.random() * 3))]);
+    });
+
 
     //////////////////////////////////////////////////////////////////////////////////////////
 
