@@ -61,12 +61,27 @@ export function createPhysicsEngine(element) {
     });
 
     let stack2 = Matter.Composites.stack(1150, -660, 4, 4, 5, 100, function(x,y){
-        let sides = Math.floor((Math.random() * 5) + 3);
-        return Matter.Bodies.polygon(x, y, sides, 50, {
-            render: {
-                // fillStyle: '#fff152'
-            }
-        });
+        // let sides = Math.floor((Math.random() * 5) + 3);
+        // return Matter.Bodies.polygon(x, y, sides, 50, {
+        //     render: {
+        //         // fillStyle: '#fff152'
+        //     }
+        // });
+        let vertices = [
+            {x : 18 , y : 195},
+            {x : 18 , y : 16},
+            {x : 107 , y : 195}
+        ]
+
+        let vertices2 = [
+            {x : 320 , y : 189},
+            {x : 383 , y : 253},
+            {x : 256 , y : 380},
+            {x : 193 , y : 316},
+            {x : 193 , y : 189}
+        ]
+
+        return Matter.Bodies.fromVertices(x, y, vertices);
     });
 
     //////////////////////////////////////////////////////////////////////////////////////////
