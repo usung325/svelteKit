@@ -110,18 +110,17 @@
 
 
 
-                            <div class="flex -space-x-14 justify-center">
+                            <!-- <div class="flex -space-x-14 justify-center">
                                     {#each stickers as sticker}
                                         <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=130em/>
                                     {/each}
-                            </div>
+                            </div> -->
                             <div class="max-w-[50%]">
                                 <LxdMatter />
                             </div>
                         
                             <!-- <p class="">That's it!</p> -->
                             <div>
-                                
                                 <p><a href="/" class=" hover:text-yellow-400"><i class="fa-solid fa-arrow-up fa-rotate-270"></i> Thank you! </a></p>
                             </div>
                             
