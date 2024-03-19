@@ -115,7 +115,7 @@
                                         <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=130em/>
                                     {/each}
                             </div>
-                            <div class="">
+                            <div class="max-w-[50%]">
                                 <LxdMatter />
                             </div>
                         
