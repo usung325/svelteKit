@@ -6,7 +6,6 @@
 
     let stickers = ['cat', 'dog', 'frog4', 'mouse'];
     import isFull from "./FsContainer.svelte";
-    import LxdMatter from "./LXDMatter.svelte";
 
     // let iter = Array.from({ length: 5 }, (_, i) => i + 1);
     let iter = ['iter1', 'iter2', 'iter3', 'iter4'];
