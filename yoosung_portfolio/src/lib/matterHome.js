@@ -51,7 +51,7 @@ export function createPhysicsEngine(element) {
 
 
 
-    let stack = Matter.Composites.stack(50,0, 4, 4, 5, 50, function(x,y){
+    let stack = Matter.Composites.stack(25, -660, 4, 4, 5, 100, function(x,y){
         let sides = Math.floor((Math.random() * 5) + 3);
         return Matter.Bodies.polygon(x, y, sides, 50, {
             render: {
@@ -60,7 +60,7 @@ export function createPhysicsEngine(element) {
         });
     });
 
-    let stack2 = Matter.Composites.stack(1150,0, 4, 4, 5, 50, function(x,y){
+    let stack2 = Matter.Composites.stack(1150, -660, 4, 4, 5, 100, function(x,y){
         let sides = Math.floor((Math.random() * 5) + 3);
         return Matter.Bodies.polygon(x, y, sides, 50, {
             render: {
