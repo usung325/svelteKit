@@ -11,10 +11,12 @@
 
     let canvasContainer;
 
-    onMount(() => {
-        createPhysicsEngine(canvasContainer);
-        
-    });
+    $: if (showOverlay2) {
+    // Perform your action here
+    console.log('Component mounted and showOverlay2 is false');
+    createPhysicsEngine(canvasContainer);
+    // You can also manipulate `canvasContainer` here if needed
+    }
 
     let runTransition = false;
     onMount(() => runTransition = true);
@@ -36,8 +38,6 @@
         
         <div id = 'main'>
             {#if showOverlay2}
-                
-            {:else}
                 <div class="fixed inset-0 z-[-100] my-0" id="canvas-container" bind:this={canvasContainer}>
                 </div>
             {/if}
@@ -155,9 +155,6 @@
 
                                                 <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
                                         </div>
-                                            {#if showOverlay2 && shown}
-                                                <p>debug hi</p>
-                                            {/if}
                                             
                                         <div class="flex flex-col px-2">
                                             <div class="flex flex-row justify-between md:-mx-24">
