@@ -5,7 +5,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	build: {
 	   rollupOptions: {
-		 external: ['matter-js'], // Add other external dependencies here
+		 external: ['/Users/roy/Library/Caches/typescript/5.3/node_modules/@types/matter-js/index'], // Add other external dependencies here
 	   },
 	},
    });
