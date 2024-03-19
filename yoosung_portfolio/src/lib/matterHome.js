@@ -7,6 +7,7 @@ var Engine = Matter.Engine,
     Bodies = Matter.Bodies,
     Composite = Matter.Composite;
 
+
 export function createPhysicsEngine(element) {
     // Initialize Matter.js engine
     const engine = Engine.create();
@@ -28,6 +29,9 @@ export function createPhysicsEngine(element) {
     
     ///////////////////////////////////////////////////////////////////////////////////////////////
     // create two boxes and a ground
+    // var defaultFillStyle2 = (body.isStatic ? '#14151f' : Common.choose(['#08278c', '#65bbf7', '#ffd45e', '#ff7b24', '#fae950']));
+    // body.render.fillStyle = body.render.fillStyle || defaultFillStyle2;
+
     let boxA = Bodies.rectangle(200, 200, 80, 80);
     let boxB = Bodies.rectangle(250, 50, 80, 80);
     let ground = Bodies.rectangle(900, 960, 2000, 100, { 

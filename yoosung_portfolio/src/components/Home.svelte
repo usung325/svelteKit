@@ -3,6 +3,7 @@
     import SectionWrapper from "./SectionWrapper.svelte";
 
     export let showOverlay = false;
+    export let showOverlay2 = false;
     import { fade, fly } from 'svelte/transition';
 
     import { onMount } from 'svelte';
@@ -31,10 +32,15 @@
 
 <SectionWrapper>
     <body class="overscroll-behavior-x: auto;">
-        <div class="fixed inset-0 z-[-100] my-0" id="canvas-container" bind:this={canvasContainer}>
-        </div>
+        
         
         <div id = 'main'>
+            {#if showOverlay2}
+                
+            {:else}
+                <div class="fixed inset-0 z-[-100] my-0" id="canvas-container" bind:this={canvasContainer}>
+                </div>
+            {/if}
             
             <!-- <div class="md:flex md:flex-row md:justify-center">
                 <div class=" md:min-w-[512px] md:w-full md:max-w-xl">
@@ -144,9 +150,15 @@
                                 <div in:fly = {{ y: 200, duration: 1000, delay:200}} class="contentBlock">
                                     <div class="flex flex-col gap-2">
                                         <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
-                                            <a href="/projects/lxd"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
-    
+
+                                            <a href="/projects/lxd" on:mouseenter={() => showOverlay2 = true} on:mouseleave={() => showOverlay2 = false}> 
+
+                                                <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
                                         </div>
+                                            {#if showOverlay2 && shown}
+                                                <p>debug hi</p>
+                                            {/if}
+                                            
                                         <div class="flex flex-col px-2">
                                             <div class="flex flex-row justify-between md:-mx-24">
                                                 <p> LXD Conference Rebrand </p>
