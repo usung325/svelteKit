@@ -41,20 +41,26 @@ export function createPhysicsEngine(element) {
     let rectangle2 = Bodies.rectangle(150, 250, 100, 50);
 
 
+    let arrColor = ['#fff152', '#4ec8fc', '#ffa538', '#06285e'];
+    let randIndex = (Math.floor((Math.random() * 3)));
+
+
+
+
     let stack = Matter.Composites.stack(50,0, 4, 4, 5, 50, function(x,y){
-        let sides = Math.round(Matter.Common.random(3,5));
+        let sides = Math.floor((Math.random() * 5) + 3);
         return Matter.Bodies.polygon(x, y, sides, 50, {
             render: {
-                fillStyle: '#fff152'
+                // fillStyle: arrColor[randIndex]
             }
         });
     });
 
     let stack2 = Matter.Composites.stack(1150,0, 4, 4, 5, 50, function(x,y){
-        let sides = Math.round(Matter.Common.random(3,5));
+        let sides = Math.floor((Math.random() * 5) + 3);
         return Matter.Bodies.polygon(x, y, sides, 50, {
             render: {
-                fillStyle: '#fff152'
+                // fillStyle: '#fff152'
             }
         });
     });
