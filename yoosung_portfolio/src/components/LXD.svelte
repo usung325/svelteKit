@@ -13,6 +13,22 @@
     let iter2 = ['iter1.1', 'iter2.1', 'iter3.1', 'iter4.1'];
     let iter3 = ['iter1.2', 'iter2.2', 'iter3.2', 'iter4.2'];
 
+
+
+
+
+    /////////////////////////// THIS IS THE LXDMATTER INTERACTIVE ///////////////////////
+    import { onMount } from "svelte";
+    import { createPhysicsEngine } from "$lib/matter.js";
+
+    let canvasContainer;
+
+    onMount(() => {
+        createPhysicsEngine(canvasContainer);
+        
+    });
+    /////////////////////////// THIS IS THE LXDMATTER INTERACTIVE ///////////////////////
+
     
 </script>
 
@@ -116,7 +132,8 @@
                                     {/each}
                             </div> -->
                             <div class="max-w-[50%]">
-                                <!-- <LxdMatter /> -->
+                                <div id="canvas-container" bind:this={canvasContainer}>
+                                </div>
                             </div>
                         
                             <!-- <p class="">That's it!</p> -->
