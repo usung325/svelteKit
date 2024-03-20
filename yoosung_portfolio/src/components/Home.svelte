@@ -13,8 +13,14 @@
 
     $: if (showOverlay2) {
     // Perform your action here
-    console.log('Component mounted and showOverlay2 is false');
+    console.log('Component mounted and showOverlay2 is TRUE');
     createPhysicsEngine(canvasContainer);
+    // You can also manipulate `canvasContainer` here if needed
+    }
+
+    $: if (!showOverlay2) {
+    // Perform your action here
+    console.log('Component mounted and showOverlay2 is FALSE');
     // You can also manipulate `canvasContainer` here if needed
     }
 
