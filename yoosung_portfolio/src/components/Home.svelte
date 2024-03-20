@@ -174,7 +174,7 @@
                                 </div>
                                 </span>
     
-                                <span in:fade = {{ duration:1000, delay:200}}>
+                                <!-- <span in:fade = {{ duration:1000, delay:200}}>
                                 <div in:fly = {{ y: 200, duration: 1000, delay:200}} class="contentBlock">
                                     <div class="flex flex-col gap-2">
                                         <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
@@ -192,7 +192,7 @@
                                     </div>
     
                                 </div>
-                                </span>
+                                </span> -->
                             </div>
     
     
