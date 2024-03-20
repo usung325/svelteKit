@@ -52,7 +52,7 @@
                     <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
                         {#if runTransition}
                         <div in:fade = {{duration:1000, delay:0}} class="mb-4 z-20 max-w-[90%] ">
-                            <h1 class="inline-block text-slate-700 "> My name is <a target ="blank" href="https://www.instagram.com/yoosung_design/" class="hover:text-blue-500"> <span style="font-family: Arizona Bold">Yoo Sung Lee</span></a> 
+                            <h1 class="inline-block text-slate-700 "> My name is <a href="/about" class="hover:text-blue-500"> <span style="font-family: Arizona Bold">Yoo Sung Lee</span></a> 
                                 and I'm a brand designer studying <a target ="blank"  class="hover:text-blue-500" href="https://design.cmu.edu/"><span style="font-family: Arizona Bold">Design @CMU</span></a>. I bring ideas to life through
                                 <span role="tooltip" style="font-family: Arizona Bold" on:mouseover={() => (isMouseOver = true)} on:mouseout={() => (isMouseOver = false)}> 
                                     
