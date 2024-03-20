@@ -41,6 +41,19 @@ export function createPhysicsEngine(element, command) {
                 fillStyle: '#ffffff'
             } 
         });
+
+        let wallL = Bodies.rectangle(-25, 500, 50, 2000, { 
+            isStatic: true,
+            render: {
+                fillStyle: '#ffffff'
+            } 
+        });
+        let wallR = Bodies.rectangle(1550, 500, 50, 2000, { 
+            isStatic: true,
+            render: {
+                fillStyle: '#ffffff'
+            } 
+        });
     
         // Add bodies, constraints, etc.
         let rectangle2 = Bodies.rectangle(150, 250, 100, 50);
@@ -52,7 +65,7 @@ export function createPhysicsEngine(element, command) {
     
     
     
-        let stack = Matter.Composites.stack(25, -920, 4, 4, 5, 100, function(x,y){
+        let stack = Matter.Composites.stack(-25, -920, 4, 4, 5, 100, function(x,y){
             // let sides = Math.floor((Math.random() * 5) + 3);
             // return Matter.Bodies.polygon(x, y, sides, 50, {
             //     render: {
@@ -74,30 +87,10 @@ export function createPhysicsEngine(element, command) {
                 {x : 153 , y : 151},
                 {x : 197 , y : 105}
             ]]
-    
-            let vertices = [
-                {x : 18 , y : 195},
-                {x : 18 , y : 16},
-                {x : 107 , y : 195}
-            ]
-    
-            let vertices2 = [
-                {x : 198 , y : 195},
-                {x : 153 , y : 151},
-                {x : 197 , y : 105}
-            ]
-    
-            let vertices3 = [
-                {x : 261 , y : 154},
-                {x : 292 , y : 186},
-                {x : 229 , y : 249},
-                {x : 198 , y : 218},
-                {x : 198 , y : 154}
-            ]
             return Matter.Bodies.fromVertices(x, y, listVerts[Math.floor((Math.random() * 3))]);
         });
     
-        let stack2 = Matter.Composites.stack(1150, -920, 4, 4, 5, 100, function(x,y){
+        let stack2 = Matter.Composites.stack(1190, -920, 4, 4, 5, 100, function(x,y){
             // let sides = Math.floor((Math.random() * 5) + 3);
             // return Matter.Bodies.polygon(x, y, sides, 50, {
             //     render: {
@@ -120,26 +113,6 @@ export function createPhysicsEngine(element, command) {
                 {x : 198 , y : 218},
                 {x : 198 , y : 154}
             ]]
-    
-            let vertices = [
-                {x : 18 , y : 195},
-                {x : 18 , y : 16},
-                {x : 107 , y : 195}
-            ]
-    
-            let vertices2 = [
-                {x : 198 , y : 195},
-                {x : 153 , y : 151},
-                {x : 197 , y : 105}
-            ]
-    
-            let vertices3 = [
-                {x : 261 , y : 154},
-                {x : 292 , y : 186},
-                {x : 229 , y : 249},
-                {x : 198 , y : 218},
-                {x : 198 , y : 154}
-            ]
             return Matter.Bodies.fromVertices(x, y, listVerts[Math.floor((Math.random() * 3))]);
         });
     
@@ -155,7 +128,7 @@ export function createPhysicsEngine(element, command) {
         });
         render.mouse = mouse;
     
-        Matter.World.add(engine.world, [stack, stack2, ground, mouseConstraint]);
+        Matter.World.add(engine.world, [stack, stack2, ground,wallL, wallR, mouseConstraint]);
         // ...
     
         // Run the engine
