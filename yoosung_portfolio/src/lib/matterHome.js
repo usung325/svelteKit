@@ -34,10 +34,10 @@ export function createPhysicsEngine(element) {
 
     let boxA = Bodies.rectangle(200, 200, 80, 80);
     let boxB = Bodies.rectangle(250, 50, 80, 80);
-    let ground = Bodies.rectangle(900, 980, 2000, 40, { 
+    let ground = Bodies.rectangle(900, 980, 2000, 60, { 
         isStatic: true,
         render: {
-            fillStyle: '#1462f5'
+            fillStyle: '#ffffff'
         } 
     });
 
