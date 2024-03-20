@@ -14,14 +14,13 @@
     $: if (showOverlay2) {
     // Perform your action here
     console.log('Component mounted and showOverlay2 is TRUE');
-    createPhysicsEngine(canvasContainer);
-    // You can also manipulate `canvasContainer` here if needed
+    createPhysicsEngine(canvasContainer, 'init');
     }
 
     $: if (!showOverlay2) {
     // Perform your action here
     console.log('Component mounted and showOverlay2 is FALSE');
-    // You can also manipulate `canvasContainer` here if needed
+    // createPhysicsEngine(canvasContainer, 'clear');
     }
 
     let runTransition = false;
