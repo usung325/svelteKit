@@ -40,7 +40,7 @@
                         <p class="text-gray-600 text-2xl">
                             <span class="" style="">
                                 <div class="grid grid-cols-4 gap-4 sm:gap-2 items-center content-center mx-atuo">
-                                    <a target="_blank" href="https://drive.google.com/file/d/1Wtdo8JSSomhf-S6WhM2EqKafMnIL6UAg/view?usp=sharing" class="hover:text-blue-500"> <i class="fa-solid fa-file"></i> <span class=" text-lg">Resume</span> </a>
+                                    <a target="_blank" href="https://drive.google.com/file/d/1YVKPMAIi6aP6BCHqgHDyWjLCWsnWrMAE/view?usp=sharing" class="hover:text-blue-500"> <i class="fa-solid fa-file"></i> <span class=" text-lg">Resume</span> </a>
                                     <a target="_blank" href="https://www.linkedin.com/in/yoosung2/" class="hover:text-blue-500"> <i class="fa-brands fa-linkedin"></i> <span class=" text-lg">Linkedin</span> </a>
                                     <a target="_blank" href="https://github.com/usung325" class="hover:text-blue-500"> <i class="fa-brands fa-github"></i> <span class=" text-lg">Github</span> </a>
                                     <a target="_blank" href="mailto:yoosung2@andrew.cmu.edu" class="hover:text-blue-500"> <i class="fa-solid fa-envelope"></i> <span class=" text-lg">Email</span> </a>
