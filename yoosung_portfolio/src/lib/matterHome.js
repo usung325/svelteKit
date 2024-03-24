@@ -14,6 +14,8 @@ export function createPhysicsEngine(element, command) {
 
         // Initialize Matter.js engine
         const engine = Engine.create();
+        // Enable sleeping
+        engine.enableSleeping = true
     
         // Add a renderer
         const render = Render.create({
