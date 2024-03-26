@@ -93,12 +93,32 @@
                                 {/each}
                             </div>
 
+                            <div class=" mt-6 ">
+                                <h2 class=""> Animated Logotypes:</h2>
+                                <p>Here's two instances of the logo animated.</p>
+                            </div>
+
                             <div class="grid grid-cols-2 gap-4 items-center">
                                 <img alt="gif" src="/lxd/lxdLogo3.gif" />
                                 <img alt="gif" src="/lxd/lxdLogo2.gif" />
                             </div>
 
+                            <div class=" mt-6 ">
+                                <h2 class=""> Tangram Interactive: </h2>
+                                <p> I coded an interactive program so that people could make their own tangrams out of the shapes from the logo. </p>
+                            </div>
+                            <video width=600 height=auto controls>
+                                <source src="/lxd/lxdDemo.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                              <track kind="captions" /> 
+                            </video>
 
+
+                            <div class=" mt-6 ">
+                                <h2 class=""> Posters and Mockups: </h2>
+                                <p> Here are some poster, website, and event nametag mockups.</p>
+                            </div>
+                            
                             <img alt="poster" src="/lxd/lxdPoster.png"  />
 
 
@@ -113,6 +133,10 @@
                             <ImageWrapper>
                                 <img alt="mockups" src="/lxd/posterMock2.png" />
                             </ImageWrapper>
+
+
+
+                            
 
 
                             <div class="-mb-6 mt-6">
