@@ -105,7 +105,7 @@
 
                             <div class=" mt-6 ">
                                 <h2 class=""> Tangram Interactive: </h2>
-                                <p> I coded an interactive program so that people could make their own tangrams out of the shapes from the logo. </p>
+                                <p> I coded an interactive website so that people could make their own tangrams out of the shapes from the logo. </p>
                             </div>
                             <video width=600 height=auto controls>
                                 <source src="/lxd/lxdDemo.mp4" type="video/mp4">
