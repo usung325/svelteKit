@@ -80,19 +80,23 @@
 
 
 
-                            <div class="flex flex-row py-5 justify-between">
+                            <!-- <div class="flex flex-row py-5 justify-between"> -->
+                            <div class="flex flex-row py-5 justify-center space-x-14">
                                 <div>
                                     <a href="/design" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen-nib fa-2xs"></i> Design </a>
                                 </div>
+
                                 <div>
+                                    <a href="/code" class=" hover:text-blue-500"> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
+                                </div>
+
+                                <!-- <div>
                                     <a href="/illustration" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
                                 </div>
                                 <div>
                                     <a href="/photography" class=" hover:text-blue-500 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
-                                </div>
-                                <div>
-                                    <a href="/code" class=" hover:text-blue-500"> <i class="fa-solid fa-code fa-2xs"></i> Code </a>
-                                </div>
+                                </div> -->
+                                
                             </div>
                             
                         </div>
