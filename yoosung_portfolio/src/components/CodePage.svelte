@@ -342,10 +342,10 @@
 
                 <!-- <iframe src="https://imgur.com/ZXHn1Gx" frameborder="0" allowfullscreen width="560" height="315"></iframe> -->
 
-                <a
+                <!-- <a
                     class=" text-blue-400 hover:text-black"
                     href="https://www.linkedin.com/in/yoosung2/">Contact Me</a
-                >
+                > -->
             </div>
         </div>
     </body>
