@@ -23,7 +23,7 @@
 
                 <div class="inline-flex text-slate-500 -mt-7 space-x-5">
                     <p class=" ">
-                        <i class="fa-regular fa-calendar"></i> Fall 2023+
+                        <i class="fa-regular fa-calendar"></i> Fall 2024+
                     </p>
                     <p><i class="fa-solid fa-user-group"></i> 1</p>
                 </div>
