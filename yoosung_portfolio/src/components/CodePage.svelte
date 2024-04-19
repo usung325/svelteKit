@@ -323,7 +323,7 @@
                             <br/>
 
                             <p>
-                                The user is able to wind the clock clock-wise or counter-clock-wise using either the mouse or key presses to navigate the archive.
+                                The user is able to wind the clock clock-wise or counter-clock-wise using either the mouse or keyboard to navigate the website.
                             </p>
                         </div>
 
