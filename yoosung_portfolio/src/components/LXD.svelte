@@ -27,10 +27,40 @@
     });
     /////////////////////////// THIS IS THE LXDMATTER INTERACTIVE ///////////////////////
 
+
+
+
+    //////////////////////////////////////////
+
+    import Loader from "./Loader.svelte";
+    
+    let imList = ["/lxd/posterMock2.png","/lxd/lxdLogo3.gif", "/lxd/lxdLogo2.gif", "/lxd/lxdPoster.png","/lxd/lxdWeb.png","/lxd/posterMock1.png","/lxd/posterMock2.png"  ]
+    function preload(src) {
+        return new Promise(function(resolve) {
+            let img = new Image()
+            img.onload = resolve
+            img.src = src
+        });
+    };
+
+    let imPromises = [];
+    const createAndResolvePromises = async () => {
+        imList.forEach((link) => imPromises.push(preload(link)));
+        return await Promise.all(imPromises);
+    }
+
+    //////////////////////////////////////////
+
+
+
     
 </script>
 
 <SectionWrapper>
+    {#await createAndResolvePromises()}
+            <Loader />
+        {:then}
+
     <div id = 'stickq'>
         <!-- <div class="md:flex md:flex-row md:justify-center"> -->
             <!-- <div class=" md:min-w-[512px] md:w-full md:max-w-xl"> -->
@@ -173,4 +203,5 @@
         <!-- </div> -->
         
     </div>
+    {/await}
 </SectionWrapper>

@@ -9,6 +9,27 @@
     import { onMount } from 'svelte';
     import { createPhysicsEngine } from "$lib/matterHome.js";
 
+    //////////////////////////////////////////
+
+    import Loader from "./Loader.svelte";
+    
+    let imList = ["/stickq.png", "/lxd.png"]
+    function preload(src) {
+        return new Promise(function(resolve) {
+            let img = new Image()
+            img.onload = resolve
+            img.src = src
+        });
+    };
+
+    let imPromises = [];
+    const createAndResolvePromises = async () => {
+        imList.forEach((link) => imPromises.push(preload(link)));
+        return await Promise.all(imPromises);
+    }
+
+    //////////////////////////////////////////
+
 
     let canvasContainer;
 
@@ -24,21 +45,39 @@
     // createPhysicsEngine(canvasContainer, 'clear');
     }
 
-    let runTransition = false;
-    onMount(() => runTransition = true);
+    
 
    let shown = false;
+    // onMount(() => {
+	// 	setTimeout(() => {console.log('waiting'); shown = true}, 1000);
+	// });
+
+    let runTransition = false;
+    // onMount(() => runTransition = true);
+
     onMount(() => {
-		setTimeout(() => {console.log('waiting'); shown = true}, 1000);
+        setTimeout(() => {console.log('waiting'); shown = true, runTransition = true}, 1000);
 	});
+
+    
 
     let isMouseOver = false;
     let isMouseOver2 = false;
+
+
+
+
+    
+
 </script>
 
 
 
 <SectionWrapper>
+    <!-- {#await createAndResolvePromises()}
+            <Loader />
+        {:then} -->
+
     <body class="overscroll-behavior-x: auto;">
         
         
@@ -214,4 +253,5 @@
         
     </body>
 
+    <!-- {/await} -->
 </SectionWrapper>
