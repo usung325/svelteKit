@@ -4,7 +4,7 @@
     ///////////////////////////////////////////////////////
     import Loader from "./Loader.svelte";
     
-    let imList = ["/coding/pattern.gif","/coding/sc2.png","/coding/sc1.png","/coding/sc3.png","/coding/sc4.png"]
+    let imList = ["/coding/pattern.gif","/coding/sc2.png","/coding/sc1.png","/coding/sc3.png","/coding/sc4.png", "/coding/livePattern.gif", "/coding/gen1.png","/coding/gen2.png","/coding/gen3.png","/coding/gen4.png"]
     function preload(src) {
         return new Promise(function(resolve) {
             let img = new Image()
