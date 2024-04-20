@@ -56,11 +56,11 @@
     // onMount(() => runTransition = true);
 
     onMount(() => {
-        setTimeout(() => {console.log('waiting');runTransition = true}, 100);
+        setTimeout(() => {console.log('waiting');runTransition = true}, 300);
 	});
 
     onMount(() => {
-        setTimeout(() => {console.log('waiting'); shown = true}, 1000);
+        setTimeout(() => {console.log('waiting'); shown = true}, 1300);
 	});
     
 
