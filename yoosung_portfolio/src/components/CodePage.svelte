@@ -161,8 +161,8 @@
 
 
                         <div class="grid grid-cols-2 gap-2 pb-2">
-                            <img alt="pattern gif" src="/coding/lxd1.gif" />
-                            <img alt="pattern gif" src="/coding/lxd2.gif" />
+                            <img alt="pattern gif" src="/coding/lxd1.gif" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/lxd2.gif" class="bg-slate-200"/>
                         </div>
 
                         
@@ -200,7 +200,7 @@
                         </div>
 
                         <div>
-                            <img alt="lxd logo" src="/lxd/lxdLogo2.gif" />
+                            <img alt="lxd logo" src="/lxd/lxdLogo2.gif" class="bg-slate-200"/>
                         </div>
 
                         <div>
@@ -226,17 +226,18 @@
                             <img
                                 alt="gif of cameraDraw"
                                 src="/coding/CameraDraw.gif"
+                                class="bg-slate-200"
                             />
                         </div>
 
                         
 
                         <div class="grid grid-cols-2 gap-2 py-3">
-                            <img alt="pattern gif" src="/coding/bit1.png" />
-                            <img alt="pattern gif" src="/coding/bit2.png" />
-                            <img alt="pattern gif" src="/coding/bit3.png" />
+                            <img alt="pattern gif" src="/coding/bit1.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/bit2.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/bit3.png" class="bg-slate-200"/>
                             <!-- <img alt="pattern gif" src="/coding/bit4.png" /> -->
-                            <img alt="pattern gif" src="/coding/bit5.png" />
+                            <img alt="pattern gif" src="/coding/bit5.png" class="bg-slate-200"/>
                         </div>
 
                         <div>
@@ -278,7 +279,7 @@
                         </div>
 
                         <div>
-                            <img alt="ml gif" src="/coding/ml2.gif" />
+                            <img alt="ml gif" src="/coding/ml2.gif" class="bg-slate-200"/>
                         </div>
 
                         <div class="py-3">
@@ -312,7 +313,7 @@
                         </div>
 
                         <div>
-                            <img alt="clock" src="/coding/clock.gif" />
+                            <img alt="clock" src="/coding/clock.gif" class="bg-slate-200"/>
                         </div>
 
                         <div>
