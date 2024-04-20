@@ -9,10 +9,39 @@
 
     let sB = Array.from({ length: 28 }, (_, i) => i + 1);
 
+
+    //////////////////////////////////////////
+
+    import Loader from "./Loader.svelte";
+    
+    let imList = ["/stickq/banner.png","/stickq/frog2.png","/stickq/brandSketch.png", "/stickq/magicCircle.png", "/stickq/ux2.png", "/stickq/ux2.png", "/stickq/ux1.png", "/stickq/thanks2.gif"]
+    function preload(src) {
+        return new Promise(function(resolve) {
+            let img = new Image()
+            img.onload = resolve
+            img.src = src
+        });
+    };
+
+    let imPromises = [];
+    const createAndResolvePromises = async () => {
+        imList.forEach((link) => imPromises.push(preload(link)));
+        return await Promise.all(imPromises);
+    }
+
+    //////////////////////////////////////////
+
+
     
 </script>
 
 <SectionWrapper>
+
+    {#await createAndResolvePromises()}
+            <Loader />
+        {:then}
+
+
     <div id = 'stickq'>
         <!-- <div class="md:flex md:flex-row md:justify-center"> -->
             <!-- <div class=" md:min-w-[512px] md:w-full md:max-w-xl"> -->
@@ -146,4 +175,6 @@
         <!-- </div> -->
         
     </div>
+
+    {/await}
 </SectionWrapper>
