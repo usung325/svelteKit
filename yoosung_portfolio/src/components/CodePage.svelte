@@ -71,16 +71,16 @@
 
 
                         <div class="pb-2">
-                            <img alt="pattern gif" src="/coding/pattern.gif" />
+                            <img alt="pattern gif" src="/coding/pattern.gif" class="bg-slate-200"/>
                         </div>
 
                         
 
-                        <div class="grid grid-cols-2 gap-2 py-2">
-                            <img alt="pattern gif" src="/coding/sc2.png" />
-                            <img alt="pattern gif" src="/coding/sc1.png" />
-                            <img alt="pattern gif" src="/coding/sc3.png" />
-                            <img alt="pattern gif" src="/coding/sc4.png" />
+                        <div class="grid grid-cols-2 gap-2 py-2 ">
+                            <img alt="pattern gif" src="/coding/sc2.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/sc1.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/sc3.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/sc4.png" class="bg-slate-200"/>
                         </div>
 
                         <div>
@@ -115,16 +115,17 @@
                             <img
                                 alt="living pattern"
                                 src="/coding/livePattern.gif"
+                                class="bg-slate-200"
                             />
                         </div>
 
                         
 
                         <div class="grid grid-cols-2 gap-4 py-2">
-                            <img alt="pattern gif" src="/coding/gen1.png" />
-                            <img alt="pattern gif" src="/coding/gen2.png" />
-                            <img alt="pattern gif" src="/coding/gen3.png" />
-                            <img alt="pattern gif" src="/coding/gen4.png" />
+                            <img alt="pattern gif" src="/coding/gen1.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/gen2.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/gen3.png" class="bg-slate-200"/>
+                            <img alt="pattern gif" src="/coding/gen4.png" class="bg-slate-200"/>
                         </div>
 
                         <div>
