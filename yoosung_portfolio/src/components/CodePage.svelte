@@ -1,9 +1,40 @@
 <script>
     import SectionWrapper from "./SectionWrapper.svelte";
+    
+    ///////////////////////////////////////////////////////
+    import Loader from "./Loader.svelte";
+    
+    let imList = ["/coding/pattern.gif","/coding/sc2.png","/coding/sc1.png","/coding/sc3.png","/coding/sc4.png", "/coding/livePattern.gif", "/coding/gen1.png","/coding/gen2.png","/coding/gen3.png","/coding/gen4.png"]
+    function preload(src) {
+        return new Promise(function(resolve) {
+            let img = new Image()
+            img.onload = resolve
+            img.src = src
+        });
+    };
+
+    let imPromises = [];
+    const createAndResolvePromises = async () => {
+        imList.forEach((link) => imPromises.push(preload(link)));
+        return await Promise.all(imPromises);
+    }
+    
+
+
+
+    ///////////////////////////////////////////////////////
+
+
 </script>
 
 <SectionWrapper>
     <body class="overscroll-behavior-x: auto;">
+
+
+        {#await createAndResolvePromises()}
+            <Loader />
+        {:then}
+
         <div id="codePage">
             <div class="z-10 col-start-1 row-start-1 mt-8 mb-3">
                 <a
@@ -350,5 +381,9 @@
                 > -->
             </div>
         </div>
+
+
+        {/await}
     </body>
+
 </SectionWrapper>
