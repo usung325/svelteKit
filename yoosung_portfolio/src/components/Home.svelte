@@ -381,7 +381,7 @@
                                                         width="2400"
                                                         height="1260"
                                                         class="object-contain rounded-sm"
-                                                        src="/mielgo2.png"
+                                                        src="/mielgo.webp"
                                                     /></a
                                                 >
                                                 <!--                                             
