@@ -22,8 +22,8 @@ export function createPhysicsEngine(element, command) {
             element: element,
             engine: engine,
             options: {
-                width: window.innerWidth, //1920
-                height: window.innerHeight, //1080
+                width: 1920, //1920
+                height: 1080, //1080
                 background: '#ffffff',
                 wireframeBackground: '#ffffff',
                 wireframes: false

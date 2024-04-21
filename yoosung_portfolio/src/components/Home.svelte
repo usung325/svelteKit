@@ -189,11 +189,31 @@
                                         
 
                                         <div in:fly = {{ y: 200 ,duration:800, delay:200 }} class="flex flex-col px-2">
-                                            <div class="flex flex-row justify-between md:-mx-24">
+                                            <!-- <div class="flex flex-row justify-between md:-mx-24">
                                                 <p href="/projects"> StickQ's </p>
-                                                <p class="text-gray-400"> Illustration, Branding, UIUX</p>
+                                                <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
+                                                
+                                            </div> -->
+
+                                            <div class="flex flex-row justify-between md:-mx-24 text-center content-center ">
+                                                <div class="text-left flex items-baseline space-x-2">
+                                                    <a href="/projects/stickq"> <h1 >StickQ's</h1> </a>
+                                                    <p class="text-slate-400">2023</p>
+                                                </div>
+
+                                                <div class="flex space-x-3 text-slate-400 mt-1">
+                                                    <div class="">
+                                                        <p class="rounded-md  outline-offset-1 outline px-2">Illustration</p>
+                                                    </div>
+                                                    <div class="">
+                                                        <p class="rounded-md outline-offset-1 outline px-2">Branding</p>
+                                                    </div>
+                                                    <div class="">
+                                                        <p class="rounded-md outline-offset-1 outline px-2">UIUX</p>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
-                                            <p class="text-gray-400 md:-mx-24">2023</p>
     
                                         </div>
                                     </div>
@@ -210,13 +230,24 @@
                                                 <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/lxd.png"> </a>
                                         </div>
                                             
-                                        <div class="flex flex-col px-2">
-                                            <div class="flex flex-row justify-between md:-mx-24">
-                                                <p> LXD Conference Rebrand </p>
-                                                <p class="text-gray-400"> Branding</p>
+                                        <div class="flex flex-row justify-between md:-mx-24 text-center content-center ">
+                                            <div class="text-left flex items-baseline space-x-2">
+                                                <a href="/projects/stickq"> <h1 >LXD Conference Rebrand</h1> </a>
+                                                <p class="text-slate-400">2023</p>
                                             </div>
-                                            <p class="text-gray-400 md:-mx-24">2023</p>
-    
+
+                                            <div class="flex space-x-3 text-slate-400 mt-1">
+                                                <div class="">
+                                                    <p class="rounded-md  outline-offset-1 outline px-2">Branding</p>
+                                                </div>
+                                                <div class="">
+                                                    <p class="rounded-md outline-offset-1 outline px-2">Code</p>
+                                                </div>
+                                                <div class="">
+                                                    <p class="rounded-md outline-offset-1 outline px-2">Kinetic Logo</p>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
     
