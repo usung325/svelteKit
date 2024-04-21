@@ -21,10 +21,15 @@
 
     let canvasContainer;
 
-    onMount(() => {
-        createPhysicsEngine(canvasContainer);
+    // onMount(() => {
+    //     createPhysicsEngine(canvasContainer);
         
-    });
+    // });
+
+    // onMount(() => {
+    //     setTimeout(() => {console.log('waiting'); createPhysicsEngine(canvasContainer);}, 5000);
+	// });
+
     /////////////////////////// THIS IS THE LXDMATTER INTERACTIVE ///////////////////////
 
 
@@ -60,6 +65,7 @@
     {#await createAndResolvePromises()}
             <Loader />
         {:then}
+        
 
     <div id = 'stickq'>
         <!-- <div class="md:flex md:flex-row md:justify-center"> -->
@@ -183,8 +189,9 @@
                                         <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=130em/>
                                     {/each}
                             </div> -->
+                            <div class="text-white"> {createPhysicsEngine(canvasContainer)} </div>
                             <div class="flex justify-center">
-                                <div id="canvas-container" bind:this={canvasContainer}>
+                                <div class="-mt-10" id="canvas-container" bind:this={canvasContainer}>
                                 </div>
                             </div>
                         
