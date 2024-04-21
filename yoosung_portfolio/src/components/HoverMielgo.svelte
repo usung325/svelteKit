@@ -18,7 +18,7 @@
     console.log(ratio);
 </script>
 
-<main class="flex flex-row h-full px-2 items-center">
+<main class="flex flex-row h-full px-10 items-center">
     <div class="space-y-10">
         <img in:fade={{delay: 100}}  alt="profile" src="/mielgo2.gif" class="w-[35%]" />
         <img in:fade={{delay: 400}}  alt="profile" src="/mielgo2.gif" class="w-[35%]" />
