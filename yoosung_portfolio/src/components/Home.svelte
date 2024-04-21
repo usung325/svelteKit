@@ -12,6 +12,7 @@
     //////////////////////////////////////////
 
     import Loader from "./Loader.svelte";
+    import Footer from "./Footer.svelte";
     
     let imList = ["/stickq.png", "/lxd.png"]
     function preload(src) {
@@ -203,13 +204,13 @@
 
                                                 <div class="flex space-x-3 text-slate-400 mt-1">
                                                     <div class="">
-                                                        <p class="rounded-md  outline-offset-1 outline px-2">Illustration</p>
+                                                        <p class="rounded-md  outline-offset-1 outline outline-[1px] px-2">Illustration</p>
                                                     </div>
                                                     <div class="">
-                                                        <p class="rounded-md outline-offset-1 outline px-2">Branding</p>
+                                                        <p class="rounded-md outline-offset-1 outline outline-[1px] px-2">Branding</p>
                                                     </div>
                                                     <div class="">
-                                                        <p class="rounded-md outline-offset-1 outline px-2">UIUX</p>
+                                                        <p class="rounded-md outline-offset-1 outline outline-[1px] px-2">UIUX</p>
                                                     </div>
                                                 </div>
                                                 
@@ -238,13 +239,13 @@
 
                                             <div class="flex space-x-3 text-slate-400 mt-1">
                                                 <div class="">
-                                                    <p class="rounded-md  outline-offset-1 outline px-2">Branding</p>
+                                                    <p class="rounded-md  outline-offset-1 outline outline-[1px] px-2">Branding</p>
                                                 </div>
                                                 <div class="">
-                                                    <p class="rounded-md outline-offset-1 outline px-2">Code</p>
+                                                    <p class="rounded-md outline-offset-1 outline outline-[1px] px-2">Code</p>
                                                 </div>
                                                 <div class="">
-                                                    <p class="rounded-md outline-offset-1 outline px-2">Kinetic Logo</p>
+                                                    <p class="rounded-md outline-offset-1 outline outline-[1px] px-2">Kinetic Logo</p>
                                                 </div>
                                             </div>
                                             
@@ -279,11 +280,20 @@
     
     
                          </div>
+
+                         <div>
+                             <div in:fade = {{ duration:1000, delay:300}}>
+                                 <div in:fly = {{ y: 200, duration: 1000, delay:250}} class="contentBlock">
+                                         <Footer />
+                                 </div>
+                             </div>
+                         </div>
+                         
                         {/if}
                     <!-- </div>
                 </div>
             </div> -->
-            
+
         </div>
     
         
