@@ -5,6 +5,7 @@
     export let showOverlay = false;
     export let showOverlay2 = false;
     export let showOverlay3 = false;
+    export let showOverlay4 = false;
     import { fade, fly } from "svelte/transition";
 
     import { onMount } from "svelte";
@@ -477,9 +478,9 @@
                                                     href="/projects/wip"
                                                     class="hover:z-10"
                                                     on:mouseenter={() =>
-                                                        (showOverlay3 = true)}
+                                                        (showOverlay4 = true)}
                                                     on:mouseleave={() =>
-                                                        (showOverlay3 = false)}
+                                                        (showOverlay4 = false)}
                                                 >
                                                     <img
                                                         alt="mielgo thumbnail"
@@ -493,7 +494,7 @@
                                                     <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
                                                         <HoverStickQs />
                                                     </div> -->
-                                                {#if showOverlay3 && shown}
+                                                {#if showOverlay4 && shown}
                                                     <div
                                                         class="fixed inset-0 z-1 my-0"
                                                         transition:fade={{
@@ -501,7 +502,7 @@
                                                             duration: 300,
                                                         }}
                                                     >
-                                                        <HoverMielgo />
+                                                        <!-- <HoverMielgo /> -->
                                                     </div>
                                                 {/if}
                                             </div>
@@ -528,9 +529,9 @@
                                                     class="text-left flex items-baseline space-x-2"
                                                 >
                                                     <a href="/projects/stickq">
-                                                        <h1>Design Hero | Alberto Mielgo</h1>
+                                                        <h1>1->3</h1>
                                                     </a>
-                                                    <p class="text-slate-400">2022</p>
+                                                    <p class="text-slate-400">2024</p>
                                                 </div>
         
                                                 <div
@@ -547,7 +548,7 @@
                                                         <p
                                                             class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                         >
-                                                            Booklet
+                                                            Interactive Media
                                                         </p>
                                                     </div>
                                                     <div class="">
