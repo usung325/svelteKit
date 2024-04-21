@@ -67,7 +67,7 @@
         {:then}
         
 
-    <div id = 'stickq'>
+    <div id = 'lxd'>
         <!-- <div class="md:flex md:flex-row md:justify-center"> -->
             <!-- <div class=" md:min-w-[512px] md:w-full md:max-w-xl"> -->
                 <!-- <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
