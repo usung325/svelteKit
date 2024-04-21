@@ -93,7 +93,7 @@
                     > design.
                 </p>
 
-                <div class="bg-black p-10">
+                <div class="bg-black p-10 rounded-md">
                     <div class="space-y-3 text-white">
 
                         <div class="text-center pb-4">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="bg-black p-10">
+                <div class="bg-black p-10 rounded-md">
                     <div class="space-y-3 text-white">
 
                         <div class="text-center pb-8">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="bg-black p-10">
+                <div class="bg-black p-10 rounded-md">
                     <div class="space-y-3 text-white">
 
                         <div class="text-center pb-8">
@@ -246,7 +246,7 @@
                     </div>
                 </div>
 
-                <div class="bg-black p-10">
+                <div class="bg-black p-10 rounded-md">
                     <div class=" space-y-3 text-white">
 
                         <div class="text-center pb-5">
@@ -302,7 +302,7 @@
                     </div>
                 </div>
 
-                <div class="bg-black p-10">
+                <div class="bg-black p-10 rounded-md">
                     <div class="space-y-3 text-white">
 
                         <div class="text-center pb-4">
@@ -336,7 +336,7 @@
                     
                 </div>
 
-                <div class="bg-black p-10">
+                <div class="bg-black p-10 rounded-md">
                     <div class="space-y-3 text-white">
 
                         <div class="text-center pb-4">
