@@ -12,22 +12,24 @@
 
         //////////////////////////////////////////////////////////////////////////////////
     }
-
-    // let width = window.innerWidth;
+    let width = window.innerWidth;
+    let widthW = (((window.innerWidth - 700) / 2) - 10);
+    let ratio = Math.floor((widthW / width) * 100)
+    console.log(ratio);
 </script>
 
 <main class="flex flex-row h-full px-2 items-center">
     <div class="space-y-10">
-        <img in:fade={{delay: 100}}  alt="profile" src="/mielgo2.gif" class="w-[40%]" />
-        <img in:fade={{delay: 400}}  alt="profile" src="/mielgo2.gif" class="w-[40%]" />
-        <img in:fade={{delay: 600}}  alt="profile" src="/mielgo2.gif" class="w-[40%]" />
+        <img in:fade={{delay: 100}}  alt="profile" src="/mielgo2.gif" class="w-[{ratio}%]" />
+        <img in:fade={{delay: 400}}  alt="profile" src="/mielgo2.gif" class="w-[{ratio}%]" />
+        <img in:fade={{delay: 600}}  alt="profile" src="/mielgo2.gif" class="w-[{ratio}%]" />
     </div>
 
     <div class="space-y-10">
         <!-- <div class="space-y-2 flex flex-col "> -->
-            <img in:fade={{delay: 300}}  alt="profile" src="/mielgo2.gif" class="w-[40%] ml-auto" />
-            <img in:fade={{delay: 500}}  alt="profile" src="/mielgo2.gif" class="w-[40%] ml-auto" />
-            <img in:fade={{delay: 200}}  alt="profile" src="/mielgo2.gif" class="w-[40%] ml-auto" />
+            <img in:fade={{delay: 300}}  alt="profile" src="/mielgo2.gif" class="w-[{ratio}%] ml-auto" />
+            <img in:fade={{delay: 500}}  alt="profile" src="/mielgo2.gif" class="w-[{ratio}%] ml-auto" />
+            <img in:fade={{delay: 200}}  alt="profile" src="/mielgo2.gif" class="w-[{ratio}%] ml-auto" />
         <!-- </div> -->
     </div>
 </main>
