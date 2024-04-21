@@ -322,7 +322,7 @@
                                                         <p
                                                             class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                         >
-                                                            Code
+                                                            Interactive Media
                                                         </p>
                                                     </div>
                                                     <div class="">
@@ -463,6 +463,101 @@
 
 
                                 <!--  -->
+                                <div class="contentBlock">
+                                    <div class="flex flex-col gap-2">
+                                        <span in:fade={{ duration: 1000, delay: 200 }}>
+                                            <div
+                                                in:fly={{
+                                                    y: 200,
+                                                    duration: 800,
+                                                    delay: 100,
+                                                }}
+                                                class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                            >
+                                                <a
+                                                    href="/projects/wip"
+                                                    class="hover:z-10"
+                                                    on:mouseenter={() =>
+                                                        (showOverlay4 = true)}
+                                                    on:mouseleave={() =>
+                                                        (showOverlay4 = false)}
+                                                >
+                                                    <img
+                                                        alt="mielgo thumbnail"
+                                                        width="2400"
+                                                        height="1260"
+                                                        class="object-contain rounded-sm"
+                                                        src="/dinner.png"
+                                                    /></a
+                                                >
+                                                <!--                                             
+                                                    <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                                        <HoverStickQs />
+                                                    </div> -->
+                                                {#if showOverlay4 && shown}
+                                                    <div
+                                                        class="fixed inset-0 z-1 my-0"
+                                                        transition:fade={{
+                                                            delay: 0,
+                                                            duration: 300,
+                                                        }}
+                                                    >
+                                                        <!-- <HoverMielgo /> -->
+                                                    </div>
+                                                {/if}
+                                            </div>
+                                        </span>
+        
+                                        <div
+                                            in:fly={{
+                                                y: 200,
+                                                duration: 800,
+                                                delay: 200,
+                                            }}
+                                            class="flex flex-col px-2"
+                                        >
+                                            <!-- <div class="flex flex-row justify-between md:-mx-24">
+                                                        <p href="/projects"> StickQ's </p>
+                                                        <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
+                                                        
+                                                    </div> -->
+        
+                                                    <div
+                                                    class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24  text-center content-center"
+                                                >
+                                                    <div
+                                                        class="text-left flex items-baseline space-x-2 "
+                                                    >
+                                                        <a href="/projects/stickq">
+                                                            <h1>Future of Shared Spaces</h1>
+                                                        </a>
+                                                        <p class="text-slate-400">2024</p>
+                                                    </div>
+            
+                                                    <div
+                                                        class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal" 
+                                                    >
+                                                        <div class="">
+                                                            <p
+                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                            >
+                                                                Interactive Media
+                                                            </p>
+                                                        </div>
+                                                        <div class="">
+                                                            <p
+                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                            >
+                                                                User Research
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
 
                                 <div class="contentBlock">
                                     <div class="flex flex-col gap-2">
@@ -564,6 +659,14 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!--  -->
+
+                                
+
+                                <!--  -->
+
+                                
                     </div>
                 </div>
 
