@@ -34,7 +34,7 @@
 
     import Loader from "./Loader.svelte";
     
-    let imList = ["/lxd/posterMock2.png","/lxd/lxdLogo3.gif", "/lxd/lxdLogo2.gif", "/lxd/lxdPoster.png","/lxd/lxdWeb.png","/lxd/posterMock1.png","/lxd/posterMock2.png"  ]
+    let imList = ["/lxd/posterMock2.png","/lxd/lxdLogo3.gif"] //, "/lxd/lxdLogo2.gif", "/lxd/lxdPoster.png","/lxd/lxdWeb.png","/lxd/posterMock1.png","/lxd/posterMock2.png"  
     function preload(src) {
         return new Promise(function(resolve) {
             let img = new Image()

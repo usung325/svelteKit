@@ -14,7 +14,7 @@
 
     import Loader from "./Loader.svelte";
     
-    let imList = ["/stickq/banner.png","/stickq/frog2.png","/stickq/brandSketch.png", "/stickq/magicCircle.png", "/stickq/ux2.png", "/stickq/ux2.png", "/stickq/ux1.png", "/stickq/thanks2.gif"]
+    let imList = ["/stickq/banner.png","/stickq/frog2.png","/stickq/brandSketch.png"]//, "/stickq/magicCircle.png", "/stickq/ux2.png", "/stickq/ux2.png", "/stickq/ux1.png", "/stickq/thanks2.gif"
     function preload(src) {
         return new Promise(function(resolve) {
             let img = new Image()
