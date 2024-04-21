@@ -134,7 +134,7 @@
                                 <p>Here's two instances of the logo animated.</p>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-4 items-center">
+                            <div class="grid grid-cols-1 gap-4 items-center">
                                 <img alt="gif" src="/lxd/lxdLogo3.gif" />
                                 <img alt="gif" src="/lxd/lxdLogo2.gif" />
                             </div>
