@@ -22,13 +22,16 @@ export function createPhysicsEngine(element, command) {
             element: element,
             engine: engine,
             options: {
-                width: 1920,
-                height: 1080,
+                width: window.innerWidth, //1920
+                height: window.innerHeight, //1080
                 background: '#ffffff',
                 wireframeBackground: '#ffffff',
                 wireframes: false
             }
         });
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
         
         ///////////////////////////////////////////////////////////////////////////////////////////////
         // create two boxes and a ground
@@ -37,7 +40,7 @@ export function createPhysicsEngine(element, command) {
     
         let boxA = Bodies.rectangle(200, 200, 80, 80);
         let boxB = Bodies.rectangle(250, 50, 80, 80);
-        let ground = Bodies.rectangle(900, 980, 2000, 60, { 
+        let ground = Bodies.rectangle(900, height + 30, 2000, 60, { //980
             isStatic: true,
             render: {
                 fillStyle: '#ffffff'
@@ -50,7 +53,7 @@ export function createPhysicsEngine(element, command) {
                 fillStyle: '#ffffff'
             } 
         });
-        let wallR = Bodies.rectangle(1550, 500, 50, 2000, { 
+        let wallR = Bodies.rectangle(width + 25, 500, 50, 2000, { //1550 x
             isStatic: true,
             render: {
                 fillStyle: '#ffffff'
@@ -92,7 +95,7 @@ export function createPhysicsEngine(element, command) {
             return Matter.Bodies.fromVertices(x, y, listVerts[Math.floor((Math.random() * 3))]);
         });
     
-        let stack2 = Matter.Composites.stack(1190, -920, 4, 4, 5, 100, function(x,y){
+        let stack2 = Matter.Composites.stack(width - 330, -920, 4, 4, 5, 100, function(x,y){ //1190 for x
             // let sides = Math.floor((Math.random() * 5) + 3);
             // return Matter.Bodies.polygon(x, y, sides, 50, {
             //     render: {
