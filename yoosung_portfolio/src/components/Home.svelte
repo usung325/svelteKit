@@ -371,7 +371,7 @@
                                                 class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
                                             >
                                                 <a
-                                                    href="/projects/wip"
+                                                    href="/projects/mielgo"
                                                     class="hover:z-10"
                                                     on:mouseenter={() =>
                                                         (showOverlay3 = true)}
