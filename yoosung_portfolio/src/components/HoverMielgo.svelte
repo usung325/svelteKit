@@ -55,8 +55,8 @@
     // console.log(ratio);
 </script>
 
-<main class="flex flex-row h-full px-5 items-center  justify-between">
-    <div class="space-y-24">
+<main in:fade={{delay: 50}} class="flex flex-row h-full px-5 items-center bg-black justify-between">
+    <div class="space-y-24 ">
         <img in:fade={{delay: 100}}  alt="profile" src="/mielgo/vid1.gif" class="w-[65%]" />
         <img in:fade={{delay: 400}}  alt="profile" src="/mielgo/vid2.gif" class="w-[65%]" />
         <img in:fade={{delay: 600}}  alt="profile" src="/mielgo/vid3.gif" class="w-[65%]" />
@@ -69,5 +69,6 @@
             <img in:fade={{delay: 200}}  alt="profile" src="/mielgo/vid1.gif" class="w-[65%] ml-auto" />
         <!-- </div> -->
     </div>
+    
 </main>
 

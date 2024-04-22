@@ -417,18 +417,58 @@
                                                 delay: 200,
                                             }}
                                             class="flex flex-col px-2"
+                                            
                                         >
                                             <!-- <div class="flex flex-row justify-between md:-mx-24">
                                                         <p href="/projects"> StickQ's </p>
                                                         <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
                                                         
                                                     </div> -->
-        
+                                                    {#if showOverlay3 && shown}
                                                     <div
-                                                    class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24  text-center content-center"
+                                                    class="grid  md:grid-cols-2 grid-cols-1 z-10 text-white md:-mx-24 text-center content-center"
                                                 >
                                                     <div
-                                                        class="text-left flex items-baseline space-x-2 "
+                                                        class="text-left flex items-baseline space-x-2"
+                                                    >
+                                                        <a href="/projects/mielgo">
+                                                            <h1>Design Hero | Mielgo</h1>
+                                                        </a>
+                                                        <p class="text-white">2022</p>
+                                                    </div>
+            
+                                                    <div
+                                                        class="flex space-x-3 text-white mt-1 md:justify-end justify-normal" 
+                                                    >
+                                                        <div class="">
+                                                            <p
+                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                            >
+                                                                Visual Identity
+                                                            </p>
+                                                        </div>
+                                                        <div class="">
+                                                            <p
+                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                            >
+                                                                Animation
+                                                            </p>
+                                                        </div>
+                                                        <div class="">
+                                                            <p
+                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                            >
+                                                                Booklet
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    {:else}
+                                                    <div
+                                                    class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
+                                                >
+                                                    <div
+                                                        class="text-left flex items-baseline space-x-2"
                                                     >
                                                         <a href="/projects/mielgo">
                                                             <h1>Design Hero | Mielgo</h1>
@@ -462,6 +502,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/if}
                                         </div>
                                     </div>
                                 </div>
