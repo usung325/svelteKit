@@ -27,7 +27,7 @@
 
             <div class="inline-flex text-slate-500 -mt-7 space-x-5">
                 <p class=" ">
-                    <i class="fa-regular fa-calendar"></i> Spring 2022 [7 weeks]
+                    <i class="fa-regular fa-calendar"></i> Spring 2022 [14 weeks]
                 </p>
                 <p><i class="fa-solid fa-user-group"></i> 1</p>
             </div>
@@ -69,7 +69,7 @@
                     href="https://www.instagram.com/albertomielgo/?hl=en"
                     class="text-white bg-black p-0.5 rounded-lg hover:bg-blue-500 hover:transition"
                     >Alberto Mielgo</a
-                > is a Spanish born Animator, Art Director, and Painter who has received
+                > is a Spanish born animator, art director, and painter who has received
                 a total of 4 Emmy Awards, 2 Annie Awards, and an Oscar.
             </h1>
             <p>

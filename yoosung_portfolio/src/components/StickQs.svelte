@@ -7,7 +7,7 @@
     let stickers = ['cat', 'dog', 'frog4', 'mouse'];
     import isFull from "./FsContainer.svelte";
 
-    let sB = Array.from({ length: 28 }, (_, i) => i + 1);
+    let sB = Array.from({ length: 27 }, (_, i) => i + 1);
 
 
     //////////////////////////////////////////
@@ -77,12 +77,12 @@
 
                             <img alt="other" src="/stickq/frog2.png" width=300em class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10 mx-auto"/>
 
-                            <div class="-mb-6 mt-6">
-                                <h2 class=""><i class="fa-solid fa-spinner"></i> Process</h2>
+                            <div class="-mb-6 mt-6 ">
+                                <h2 class="bg-blue-500 text-white p-3 rounded-t-md"><i class="fa-solid fa-spinner"></i> Process</h2>
                             </div>
 
 
-                            <div class="grid grid-cols-6 gap-4">
+                            <div class="grid grid-cols-3 gap-4">
                                 {#each sB as num}
                                     <img alt="sketchbook page" src="/stickq/web/{num}.jpg">
                                 {/each}
@@ -143,7 +143,7 @@
                             <img alt="other" src="/stickq/thanks2.gif" width=300em class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10 mx-auto"/>
 
                             <div class="-mb-6 mt-6">
-                                <h2 class=""><i class="fa-solid fa-mug-hot"></i> Takeaways</h2>
+                                <h2 class="bg-blue-500 text-white p-3 rounded-t-md"><i class="fa-solid fa-mug-hot"></i> Takeaways</h2>
                             </div>
                             
 

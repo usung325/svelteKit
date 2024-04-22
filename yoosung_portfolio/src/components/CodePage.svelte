@@ -92,7 +92,7 @@
                         ></span
                     > design.
                 </p>
-
+                
                 <div class="bg-black p-10 rounded-md">
                     <div class="space-y-3 text-white">
 

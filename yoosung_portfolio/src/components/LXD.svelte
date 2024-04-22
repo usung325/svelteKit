@@ -104,10 +104,14 @@
                             <p> Following the premise of "redesign a conference identity", I decided to explore ways to visualize and encapsulate the creative spirit of LXD. </p>
 
 
-                            <div class="-mb-6 mt-6 ">
+                            <div class="-mb-6 mt-6 bg-yellow-400 text-white p-3 rounded-t-md">
                                 <h2 class=""><i class="fa-solid fa-spinner"></i> Process</h2>
                             </div>
                             <p> Following the first pass, I created 4 different shape directions for the logos and type system.</p>
+
+                            
+
+
                             <div class="grid grid-cols-2 p-1 gap-1 bg-slate-200">
                                 {#each iter as fileName}
                                     <img alt="sketchbook page" src="/lxd/{fileName}.png">
@@ -129,7 +133,7 @@
                                 {/each}
                             </div>
 
-                            <div class=" mt-6 ">
+                            <div class=" mt-6 bg-yellow-400 text-white p-3 rounded-t-md">
                                 <h2 class=""> Animated Logotypes:</h2>
                                 <p>Here's two instances of the logo animated.</p>
                             </div>
@@ -139,7 +143,7 @@
                                 <img alt="gif" src="/lxd/lxdLogo2.gif" />
                             </div>
 
-                            <div class=" mt-6 ">
+                            <div class=" mt-6 bg-yellow-400 text-white p-3 rounded-t-md">
                                 <h2 class=""> Tangram Interactive: </h2>
                                 <p> I coded an interactive website so that people could make their own tangrams out of the shapes from the logo. </p>
                             </div>
@@ -150,7 +154,7 @@
                             </video>
 
 
-                            <div class=" mt-6 ">
+                            <div class=" mt-6 bg-yellow-400 text-white p-3 rounded-t-md">
                                 <h2 class=""> Posters and Mockups: </h2>
                                 <p> Here are some poster, website, and event nametag mockups.</p>
                             </div>
@@ -176,7 +180,7 @@
 
 
                             <div class="-mb-6 mt-6">
-                                <h2 class=""><i class="fa-solid fa-mug-hot"></i> Takeaways</h2>
+                                <h2 class="bg-yellow-400 text-white p-3 rounded-t-md"><i class="fa-solid fa-mug-hot"></i> Takeaways</h2>
                             </div>
                             
 
