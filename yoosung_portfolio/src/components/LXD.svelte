@@ -193,11 +193,18 @@
                                         <img alt="other" src="/stickq/{sticker}.png" class="hover:transition ease-in-out hover:scale-110  duration-300 hover:-translate-y-10" width=130em/>
                                     {/each}
                             </div> -->
-                            <div class="text-white"> {createPhysicsEngine(canvasContainer)} </div>
-                            <div class="flex justify-center">
-                                <div class="-mt-10" id="canvas-container" bind:this={canvasContainer}>
-                                </div>
+                            
+                            <div class="text-white">{createPhysicsEngine(canvasContainer)} </div>
+                            <div class="mx-auto pb-2">
+                                <p class="bg-yellow-400 w-24 rounded-t-md text-white text-center"> play on me!</p>
                             </div>
+                                
+                                <div class="flex justify-center">
+                                    
+                                    <div class="-mt-10" id="canvas-container" bind:this={canvasContainer}>
+                                    </div>
+                                </div>
+
                         
                             <!-- <p class="">That's it!</p> -->
                             <div>
