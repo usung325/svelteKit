@@ -165,9 +165,15 @@
                     </div>
                 </div>
 
+
+                <!----------------------------------------  THIS SECTION STARTS THE PROJECT CARDS ---------------------------------------->
+
+
                 <div class="flex flex-col gap-8 pb-8">
                     <!-- this is content -->
                     <div class="flex flex-col gap-6">
+
+                        <!--  CARD ONE -->
                         <div class="contentBlock">
                             <div class="flex flex-col gap-2">
                                 <span in:fade={{ duration: 1000, delay: 200 }}>

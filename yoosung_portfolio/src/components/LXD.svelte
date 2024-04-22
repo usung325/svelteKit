@@ -62,9 +62,9 @@
 </script>
 
 <SectionWrapper>
-    {#await createAndResolvePromises()}
+    <!-- {#await createAndResolvePromises()}
             <Loader />
-        {:then}
+        {:then} -->
         
 
     <div id = 'lxd'>
@@ -210,5 +210,5 @@
         <!-- </div> -->
         
     </div>
-    {/await}
+    <!-- {/await} -->
 </SectionWrapper>

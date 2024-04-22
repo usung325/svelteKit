@@ -37,9 +37,9 @@
 
 <SectionWrapper>
 
-    {#await createAndResolvePromises()}
+    <!-- {#await createAndResolvePromises()}
             <Loader />
-        {:then}
+        {:then} -->
 
 
     <div id = 'stickq'>
@@ -176,5 +176,5 @@
         
     </div>
 
-    {/await}
+    <!-- {/await} -->
 </SectionWrapper>

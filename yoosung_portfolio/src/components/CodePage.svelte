@@ -31,9 +31,9 @@
     <body class="overscroll-behavior-x: auto;">
 
 
-        {#await createAndResolvePromises()}
+        <!-- {#await createAndResolvePromises()}
             <Loader />
-        {:then}
+        {:then} -->
 
         <div id="codePage">
             <div class="z-10 col-start-1 row-start-1 mt-8 mb-3">
@@ -383,7 +383,7 @@
         </div>
 
 
-        {/await}
+        <!-- {/await} -->
     </body>
 
 </SectionWrapper>
