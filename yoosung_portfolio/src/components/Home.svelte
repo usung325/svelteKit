@@ -308,7 +308,7 @@
                                                 <div
                                                     class="text-left flex items-baseline space-x-2 "
                                                 >
-                                                    <a href="/projects/stickq">
+                                                    <a href="/projects/lxd">
                                                         <h1>LXD Conference Rebrand</h1>
                                                     </a>
                                                     <p class="text-slate-400">2023</p>
@@ -430,7 +430,7 @@
                                                     <div
                                                         class="text-left flex items-baseline space-x-2 "
                                                     >
-                                                        <a href="/projects/stickq">
+                                                        <a href="/projects/mielgo">
                                                             <h1>Design Hero | Mielgo</h1>
                                                         </a>
                                                         <p class="text-slate-400">2022</p>
