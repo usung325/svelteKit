@@ -248,6 +248,53 @@
 
                 <div class="bg-black p-10 rounded-md">
                     <div class=" space-y-3 text-white">
+                        <div class="text-center pb-5">
+                            <h1>Quadtree Boids</h1>
+                        </div>
+
+                        <div class="pb-2">
+                            <img
+                                alt="gif of cameraDraw"
+                                src="/coding/boid.gif"
+                                class="bg-slate-200"
+                            />
+                        </div>
+
+                        <div class="py-3">
+                            <video width="600" height="auto" controls>
+                                <source
+                                    src="/coding/boidVid.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                                <track kind="captions" />
+                            </video>
+                        </div>
+
+                        <div class="py-3">
+                            <p>
+                                I implemented Quadtrees to Boids in order to create data visualizations for an event I host called 1 -> 3.
+                            </p>
+                        </div>
+                        
+
+                        <div>
+                            <a
+                                target="_blank"
+                                href="https://github.com/usung325/BoidsApril23"
+                                class="hover:text-yellow-400"
+                            >
+                                <i class="fa-brands fa-github"></i></a
+                            >
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="bg-black p-10 rounded-md">
+                    <div class=" space-y-3 text-white">
 
                         <div class="text-center pb-5">
                             <h1>CameraDraw</h1>
