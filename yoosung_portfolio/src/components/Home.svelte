@@ -103,15 +103,16 @@
                                 >Yoo Sung Lee</span
                             ></a
                         >
-                        and I'm a brand designer studying
-                        <a
+                        and I'm a brand designer and creative technologist.
+                        <!-- <a
                             target="blank"
                             class="hover:text-blue-500"
                             href="https://design.cmu.edu/"
                             ><span style="font-family: Arizona Bold"
                                 >Design @CMU</span
                             ></a
-                        >. I bring ideas to life through
+                        > -->
+                        I bring ideas to life through
                         <span
                             role="tooltip"
                             style="font-family: Arizona Bold"
@@ -153,6 +154,12 @@
                         <div>
                             <a href="/code" class=" hover:text-blue-500">
                                 <i class="fa-solid fa-code fa-2xs"></i> Code
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="/about" class=" hover:text-blue-500">
+                                <i class="fa-regular fa-face-smile"></i> About
                             </a>
                         </div>
 
