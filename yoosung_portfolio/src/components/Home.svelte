@@ -95,8 +95,44 @@
             {#if runTransition}
                 <div
                     in:fade={{ duration: 1000, delay: 0 }}
-                    class="mb-4 z-20 max-w-[90%]"
+                    class="mb-4 z-20 max-w-[90%] ml-5"
                 >
+                    <div class="flex flex-row py-5 items-baseline max-w-[90%]">
+                        <div class="w-full">
+                            <div class="mr-5">
+                                <a href="/design" class=" hover:text-blue-500 ">
+                                    <i class="fa-solid fa-sun text-2xl hover:animate-spin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="space-x-14 flex flex-row text-nowrap">
+
+                            <div>
+                                <a href="/design" class=" hover:text-blue-500">
+                                    <i class="fa-solid fa-pen-nib fa-2xs"></i> Design
+                                </a>
+                            </div>
+    
+                            <div>
+                                <a href="/code" class=" hover:text-blue-500">
+                                    <i class="fa-solid fa-code fa-2xs"></i> Code
+                                </a>
+                            </div>
+    
+                            <div>
+                                <a href="/about" class=" hover:text-blue-500">
+                                    <i class="fa-regular fa-face-smile"></i> About
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- <div>
+                                <a href="/illustration" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
+                            </div>
+                            <div>
+                                <a href="/photography" class=" hover:text-blue-500 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
+                            </div> -->
+                    </div>
                     <h1 class="inline-block text-slate-700">
                         My name is <a href="/about" class="hover:text-blue-500">
                             <span style="font-family: Arizona Bold"
@@ -144,42 +180,13 @@
                     </h1>
 
                     <!-- <div class="flex flex-row py-5 justify-between"> -->
-                    <div class="flex flex-row py-5 justify-center space-x-14">
-                        <div>
-                            <a href="/design" class=" hover:text-blue-500">
-                                <i class="fa-solid fa-pen-nib fa-2xs"></i> Design
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="/code" class=" hover:text-blue-500">
-                                <i class="fa-solid fa-code fa-2xs"></i> Code
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="/about" class=" hover:text-blue-500">
-                                <i class="fa-regular fa-face-smile"></i> About
-                            </a>
-                        </div>
-
-                        <!-- <div>
-                                    <a href="/illustration" class=" hover:text-blue-500 "> <i class="fa-solid fa-pen fa-2xs"></i> Illustration </a> 
-                                </div>
-                                <div>
-                                    <a href="/photography" class=" hover:text-blue-500 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
-                                </div> -->
-                    </div>
                 </div>
 
-
                 <!----------------------------------------  THIS SECTION STARTS THE PROJECT CARDS ---------------------------------------->
-
 
                 <div class="flex flex-col gap-8 pb-8">
                     <!-- this is content -->
                     <div class="flex flex-col gap-6">
-
                         <!--  CARD ONE -->
                         <div class="contentBlock">
                             <div class="flex flex-col gap-2">
@@ -239,46 +246,48 @@
                                                 <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
                                                 
                                             </div> -->
-                                        <div class="">
+                                    <div class="">
+                                        <div
+                                            class="grid md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
+                                        >
                                             <div
-                                                class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24  text-center content-center"
+                                                class="text-left flex items-baseline space-x-2"
                                             >
-                                                <div
-                                                    class="text-left flex items-baseline space-x-2 "
-                                                >
-                                                    <a href="/projects/stickq">
-                                                        <h1>StickQ's</h1>
-                                                    </a>
-                                                    <p class="text-slate-400">2023</p>
+                                                <a href="/projects/stickq">
+                                                    <h1>StickQ's</h1>
+                                                </a>
+                                                <p class="text-slate-400">
+                                                    2023
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                            >
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Illustration
+                                                    </p>
                                                 </div>
-        
-                                                <div
-                                                    class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal" 
-                                                >
-                                                    <div class="">
-                                                        <p
-                                                            class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                        >
-                                                            Illustration
-                                                        </p>
-                                                    </div>
-                                                    <div class="">
-                                                        <p
-                                                            class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                        >
-                                                            Branding
-                                                        </p>
-                                                    </div>
-                                                    <div class="">
-                                                        <p
-                                                            class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                        >
-                                                            UIUX
-                                                        </p>
-                                                    </div>
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Branding
+                                                    </p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        UIUX
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -310,43 +319,43 @@
                                     </div>
 
                                     <div
-                                                class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24  text-center content-center"
-                                            >
-                                                <div
-                                                    class="text-left flex items-baseline space-x-2 "
+                                        class="grid md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
+                                    >
+                                        <div
+                                            class="text-left flex items-baseline space-x-2"
+                                        >
+                                            <a href="/projects/lxd">
+                                                <h1>LXD Conference Rebrand</h1>
+                                            </a>
+                                            <p class="text-slate-400">2023</p>
+                                        </div>
+
+                                        <div
+                                            class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                        >
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                 >
-                                                    <a href="/projects/lxd">
-                                                        <h1>LXD Conference Rebrand</h1>
-                                                    </a>
-                                                    <p class="text-slate-400">2023</p>
-                                                </div>
-        
-                                                <div
-                                                    class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal" 
-                                                >
-                                                    <div class="">
-                                                        <p
-                                                            class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                        >
-                                                            Branding
-                                                        </p>
-                                                    </div>
-                                                    <div class="">
-                                                        <p
-                                                            class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                        >
-                                                            Interactive Media
-                                                        </p>
-                                                    </div>
-                                                    <div class="">
-                                                        <p
-                                                            class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                        >
-                                                            Kinetic Logo
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                    Branding
+                                                </p>
                                             </div>
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                >
+                                                    Interactive Media
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                >
+                                                    Kinetic Logo
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </span>
@@ -371,356 +380,354 @@
                                 </div>
                                 </span> -->
 
-
-                                <div class="contentBlock">
-                                    <div class="flex flex-col gap-2">
-                                        <span in:fade={{ duration: 1000, delay: 200 }}>
-                                            <div
-                                                in:fly={{
-                                                    y: 200,
-                                                    duration: 800,
-                                                    delay: 100,
-                                                }}
-                                                class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
-                                            >
-                                                <a
-                                                    href="/projects/mielgo"
-                                                    class="hover:z-10"
-                                                    on:mouseenter={() =>
-                                                        (showOverlay3 = true)}
-                                                    on:mouseleave={() =>
-                                                        (showOverlay3 = false)}
-                                                >
-                                                    <img
-                                                        alt="mielgo thumbnail"
-                                                        width="2400"
-                                                        height="1260"
-                                                        class="object-contain rounded-sm"
-                                                        src="/mielgo.webp"
-                                                    /></a
-                                                >
-                                                <!--                                             
+                        <div class="contentBlock">
+                            <div class="flex flex-col gap-2">
+                                <span in:fade={{ duration: 1000, delay: 200 }}>
+                                    <div
+                                        in:fly={{
+                                            y: 200,
+                                            duration: 800,
+                                            delay: 100,
+                                        }}
+                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                    >
+                                        <a
+                                            href="/projects/mielgo"
+                                            class="hover:z-10"
+                                            on:mouseenter={() =>
+                                                (showOverlay3 = true)}
+                                            on:mouseleave={() =>
+                                                (showOverlay3 = false)}
+                                        >
+                                            <img
+                                                alt="mielgo thumbnail"
+                                                width="2400"
+                                                height="1260"
+                                                class="object-contain rounded-sm"
+                                                src="/mielgo.webp"
+                                            /></a
+                                        >
+                                        <!--                                             
                                                     <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
                                                         <HoverStickQs />
                                                     </div> -->
-                                                {#if showOverlay3 && shown}
-                                                    <div
-                                                        class="fixed inset-0 z-1 my-0"
-                                                        transition:fade={{
-                                                            delay: 0,
-                                                            duration: 300,
-                                                        }}
-                                                    >
-                                                        <HoverMielgo />
-                                                    </div>
-                                                {/if}
+                                        {#if showOverlay3 && shown}
+                                            <div
+                                                class="fixed inset-0 z-1 my-0"
+                                                transition:fade={{
+                                                    delay: 0,
+                                                    duration: 300,
+                                                }}
+                                            >
+                                                <HoverMielgo />
                                             </div>
-                                        </span>
-        
-                                        <div
-                                            in:fly={{
-                                                y: 200,
-                                                duration: 800,
-                                                delay: 200,
-                                            }}
-                                            class="flex flex-col px-2"
-                                            
-                                        >
-                                            <!-- <div class="flex flex-row justify-between md:-mx-24">
+                                        {/if}
+                                    </div>
+                                </span>
+
+                                <div
+                                    in:fly={{
+                                        y: 200,
+                                        duration: 800,
+                                        delay: 200,
+                                    }}
+                                    class="flex flex-col px-2"
+                                >
+                                    <!-- <div class="flex flex-row justify-between md:-mx-24">
                                                         <p href="/projects"> StickQ's </p>
                                                         <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
                                                         
                                                     </div> -->
-                                                    {#if showOverlay3 && shown}
-                                                    <div
-                                                    class="grid  md:grid-cols-2 grid-cols-1 z-10 text-white md:-mx-24 text-center content-center"
-                                                >
-                                                    <div
-                                                        class="text-left flex items-baseline space-x-2"
-                                                    >
-                                                        <a href="/projects/mielgo">
-                                                            <h1>Design Hero | Mielgo</h1>
-                                                        </a>
-                                                        <p class="text-white">2022</p>
-                                                    </div>
-            
-                                                    <div
-                                                        class="flex space-x-3 text-white mt-1 md:justify-end justify-normal" 
-                                                    >
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Visual Identity
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Animation
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Booklet
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    {:else}
-                                                    <div
-                                                    class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
-                                                >
-                                                    <div
-                                                        class="text-left flex items-baseline space-x-2"
-                                                    >
-                                                        <a href="/projects/mielgo">
-                                                            <h1>Design Hero | Mielgo</h1>
-                                                        </a>
-                                                        <p class="text-slate-400">2022</p>
-                                                    </div>
-            
-                                                    <div
-                                                        class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal" 
-                                                    >
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Visual Identity
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Animation
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Booklet
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {/if}
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <!--  -->
-                                <div class="contentBlock">
-                                    <div class="flex flex-col gap-2">
-                                        <span in:fade={{ duration: 1000, delay: 200 }}>
+                                    {#if showOverlay3 && shown}
+                                        <div
+                                            class="grid md:grid-cols-2 grid-cols-1 z-10 text-white md:-mx-24 text-center content-center"
+                                        >
                                             <div
-                                                in:fly={{
-                                                    y: 200,
-                                                    duration: 800,
-                                                    delay: 100,
-                                                }}
-                                                class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                                class="text-left flex items-baseline space-x-2"
                                             >
-                                                <a
-                                                    href="/projects/wip"
-                                                    class="hover:z-10"
-                                                    on:mouseenter={() =>
-                                                        (showOverlay4 = true)}
-                                                    on:mouseleave={() =>
-                                                        (showOverlay4 = false)}
-                                                >
-                                                    <img
-                                                        alt="mielgo thumbnail"
-                                                        width="2400"
-                                                        height="1260"
-                                                        class="object-contain rounded-sm"
-                                                        src="/dinner.png"
-                                                    /></a
-                                                >
-                                                <!--                                             
+                                                <a href="/projects/mielgo">
+                                                    <h1>
+                                                        Design Hero | Mielgo
+                                                    </h1>
+                                                </a>
+                                                <p class="text-white">2022</p>
+                                            </div>
+
+                                            <div
+                                                class="flex space-x-3 text-white mt-1 md:justify-end justify-normal"
+                                            >
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Visual Identity
+                                                    </p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Animation
+                                                    </p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Booklet
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {:else}
+                                        <div
+                                            class="grid md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
+                                        >
+                                            <div
+                                                class="text-left flex items-baseline space-x-2"
+                                            >
+                                                <a href="/projects/mielgo">
+                                                    <h1>
+                                                        Design Hero | Mielgo
+                                                    </h1>
+                                                </a>
+                                                <p class="text-slate-400">
+                                                    2022
+                                                </p>
+                                            </div>
+
+                                            <div
+                                                class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                            >
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Visual Identity
+                                                    </p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Animation
+                                                    </p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                    >
+                                                        Booklet
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {/if}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="contentBlock">
+                            <div class="flex flex-col gap-2">
+                                <span in:fade={{ duration: 1000, delay: 200 }}>
+                                    <div
+                                        in:fly={{
+                                            y: 200,
+                                            duration: 800,
+                                            delay: 100,
+                                        }}
+                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                    >
+                                        <a
+                                            href="/projects/wip"
+                                            class="hover:z-10"
+                                            on:mouseenter={() =>
+                                                (showOverlay4 = true)}
+                                            on:mouseleave={() =>
+                                                (showOverlay4 = false)}
+                                        >
+                                            <img
+                                                alt="mielgo thumbnail"
+                                                width="2400"
+                                                height="1260"
+                                                class="object-contain rounded-sm"
+                                                src="/dinner.png"
+                                            /></a
+                                        >
+                                        <!--                                             
                                                     <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
                                                         <HoverStickQs />
                                                     </div> -->
-                                                {#if showOverlay4 && shown}
-                                                    <div
-                                                        class="fixed inset-0 z-1 my-0"
-                                                        transition:fade={{
-                                                            delay: 0,
-                                                            duration: 300,
-                                                        }}
-                                                    >
-                                                        <!-- <HoverMielgo /> -->
-                                                    </div>
-                                                {/if}
+                                        {#if showOverlay4 && shown}
+                                            <div
+                                                class="fixed inset-0 z-1 my-0"
+                                                transition:fade={{
+                                                    delay: 0,
+                                                    duration: 300,
+                                                }}
+                                            >
+                                                <!-- <HoverMielgo /> -->
                                             </div>
-                                        </span>
-        
-                                        <div
-                                            in:fly={{
-                                                y: 200,
-                                                duration: 800,
-                                                delay: 200,
-                                            }}
-                                            class="flex flex-col px-2"
-                                        >
-                                            <!-- <div class="flex flex-row justify-between md:-mx-24">
+                                        {/if}
+                                    </div>
+                                </span>
+
+                                <div
+                                    in:fly={{
+                                        y: 200,
+                                        duration: 800,
+                                        delay: 200,
+                                    }}
+                                    class="flex flex-col px-2"
+                                >
+                                    <!-- <div class="flex flex-row justify-between md:-mx-24">
                                                         <p href="/projects"> StickQ's </p>
                                                         <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
                                                         
                                                     </div> -->
-        
-                                                    <div
-                                                    class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24  text-center content-center"
+
+                                    <div
+                                        class="grid md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
+                                    >
+                                        <div
+                                            class="text-left flex items-baseline space-x-2"
+                                        >
+                                            <a href="/projects/stickq">
+                                                <h1>Future of Shared Spaces</h1>
+                                            </a>
+                                            <p class="text-slate-400">2024</p>
+                                        </div>
+
+                                        <div
+                                            class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                        >
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                 >
-                                                    <div
-                                                        class="text-left flex items-baseline space-x-2 "
-                                                    >
-                                                        <a href="/projects/stickq">
-                                                            <h1>Future of Shared Spaces</h1>
-                                                        </a>
-                                                        <p class="text-slate-400">2024</p>
-                                                    </div>
-            
-                                                    <div
-                                                        class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal" 
-                                                    >
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Interactive Media
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                User Research
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    Interactive Media
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                >
+                                                    User Research
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <!--  -->
+                        <!--  -->
 
-                                <div class="contentBlock">
-                                    <div class="flex flex-col gap-2">
-                                        <span in:fade={{ duration: 1000, delay: 200 }}>
-                                            <div
-                                                in:fly={{
-                                                    y: 200,
-                                                    duration: 800,
-                                                    delay: 100,
-                                                }}
-                                                class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
-                                            >
-                                                <a
-                                                    href="/projects/wip"
-                                                    class="hover:z-10"
-                                                    on:mouseenter={() =>
-                                                        (showOverlay4 = true)}
-                                                    on:mouseleave={() =>
-                                                        (showOverlay4 = false)}
-                                                >
-                                                    <img
-                                                        alt="mielgo thumbnail"
-                                                        width="2400"
-                                                        height="1260"
-                                                        class="object-contain rounded-sm"
-                                                        src="/123.png"
-                                                    /></a
-                                                >
-                                                <!--                                             
+                        <div class="contentBlock">
+                            <div class="flex flex-col gap-2">
+                                <span in:fade={{ duration: 1000, delay: 200 }}>
+                                    <div
+                                        in:fly={{
+                                            y: 200,
+                                            duration: 800,
+                                            delay: 100,
+                                        }}
+                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                    >
+                                        <a
+                                            href="/projects/wip"
+                                            class="hover:z-10"
+                                            on:mouseenter={() =>
+                                                (showOverlay4 = true)}
+                                            on:mouseleave={() =>
+                                                (showOverlay4 = false)}
+                                        >
+                                            <img
+                                                alt="mielgo thumbnail"
+                                                width="2400"
+                                                height="1260"
+                                                class="object-contain rounded-sm"
+                                                src="/123.png"
+                                            /></a
+                                        >
+                                        <!--                                             
                                                     <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300">
                                                         <HoverStickQs />
                                                     </div> -->
-                                                {#if showOverlay4 && shown}
-                                                    <div
-                                                        class="fixed inset-0 z-1 my-0"
-                                                        transition:fade={{
-                                                            delay: 0,
-                                                            duration: 300,
-                                                        }}
-                                                    >
-                                                        <!-- <HoverMielgo /> -->
-                                                    </div>
-                                                {/if}
+                                        {#if showOverlay4 && shown}
+                                            <div
+                                                class="fixed inset-0 z-1 my-0"
+                                                transition:fade={{
+                                                    delay: 0,
+                                                    duration: 300,
+                                                }}
+                                            >
+                                                <!-- <HoverMielgo /> -->
                                             </div>
-                                        </span>
-        
-                                        <div
-                                            in:fly={{
-                                                y: 200,
-                                                duration: 800,
-                                                delay: 200,
-                                            }}
-                                            class="flex flex-col px-2"
-                                        >
-                                            <!-- <div class="flex flex-row justify-between md:-mx-24">
+                                        {/if}
+                                    </div>
+                                </span>
+
+                                <div
+                                    in:fly={{
+                                        y: 200,
+                                        duration: 800,
+                                        delay: 200,
+                                    }}
+                                    class="flex flex-col px-2"
+                                >
+                                    <!-- <div class="flex flex-row justify-between md:-mx-24">
                                                         <p href="/projects"> StickQ's </p>
                                                         <p class="text-gray-400"> <span class="outline rounded-md p-0.5 text-black">Illustration</span> <span class="outline rounded-md p-0.5 text-black">Branding</span> <span class="outline rounded-md p-0.5 text-black">UIUX</span> </p>
                                                         
                                                     </div> -->
-        
-                                                    <div
-                                                    class="grid  md:grid-cols-2 grid-cols-1 md:-mx-24  text-center content-center"
+
+                                    <div
+                                        class="grid md:grid-cols-2 grid-cols-1 md:-mx-24 text-center content-center"
+                                    >
+                                        <div
+                                            class="text-left flex items-baseline space-x-2"
+                                        >
+                                            <a href="/projects/stickq">
+                                                <h1>1->3</h1>
+                                            </a>
+                                            <p class="text-slate-400">2024</p>
+                                        </div>
+
+                                        <div
+                                            class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                        >
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                 >
-                                                    <div
-                                                        class="text-left flex items-baseline space-x-2 "
-                                                    >
-                                                        <a href="/projects/stickq">
-                                                            <h1>1->3</h1>
-                                                        </a>
-                                                        <p class="text-slate-400">2024</p>
-                                                    </div>
-            
-                                                    <div
-                                                        class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal" 
-                                                    >
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Branding
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Interactive Media
-                                                            </p>
-                                                        </div>
-                                                        <div class="">
-                                                            <p
-                                                                class="rounded-md outline-offset-1 outline outline-[1px] px-2"
-                                                            >
-                                                                Animation
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    Branding
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                >
+                                                    Interactive Media
+                                                </p>
+                                            </div>
+                                            <div class="">
+                                                <p
+                                                    class="rounded-md outline-offset-1 outline outline-[1px] px-2"
+                                                >
+                                                    Animation
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <!--  -->
+                        <!--  -->
 
-                                
-
-                                <!--  -->
-
-                                
+                        <!--  -->
                     </div>
                 </div>
 
