@@ -77,7 +77,7 @@
                             >
                                 <a
                                     target="_blank"
-                                    href="https://drive.google.com/file/d/1YVKPMAIi6aP6BCHqgHDyWjLCWsnWrMAE/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1M7CSugJ7nP-K6gNDeq5lKboesOcvP0-Q/view?usp=sharing"
                                     class="hover:text-blue-500"
                                 >
                                     <i class="fa-solid fa-file"></i>
