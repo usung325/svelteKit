@@ -95,12 +95,12 @@
             {#if runTransition}
                 <div
                     in:fade={{ duration: 1000, delay: 0 }}
-                    class="mb-4 z-20 max-w-[90%] ml-5"
-                >
-                    <div class="flex flex-row py-5 items-baseline max-w-[90%]">
+                    class="mb-4 z-20 max-w-[100%] ml-5"
+                > 
+                    <div class="flex flex-row py-3 items-baseline max-w-[95%] text-lg  px-2">
                         <div class="w-full">
                             <div class="mr-5">
-                                <a href="/design" class=" hover:text-blue-500 ">
+                                <a href="/design" class=" hover:text-orange-500 ">
                                     <i class="fa-solid fa-sun text-2xl hover:animate-spin"></i>
                                 </a>
                             </div>
@@ -108,19 +108,19 @@
                         <div class="space-x-14 flex flex-row text-nowrap">
 
                             <div>
-                                <a href="/design" class=" hover:text-blue-500">
+                                <a href="/design" class=" hover:text-orange-500">
                                     <i class="fa-solid fa-pen-nib fa-2xs"></i> Design
                                 </a>
                             </div>
     
                             <div>
-                                <a href="/code" class=" hover:text-blue-500">
+                                <a href="/code" class=" hover:text-orange-500">
                                     <i class="fa-solid fa-code fa-2xs"></i> Code
                                 </a>
                             </div>
     
                             <div>
-                                <a href="/about" class=" hover:text-blue-500">
+                                <a href="/about" class=" hover:text-orange-500">
                                     <i class="fa-regular fa-face-smile"></i> About
                                 </a>
                             </div>
@@ -133,13 +133,13 @@
                                 <a href="/photography" class=" hover:text-blue-500 "> <i class="fa-solid fa-camera fa-2xs"></i> Photography </a>
                             </div> -->
                     </div>
-                    <h1 class="inline-block text-slate-700">
-                        My name is <a href="/about" class="hover:text-blue-500">
+                    <h1 class="inline-block text-slate-700 text-3xl">
+                        My name is <a href="/about" class="hover:text-orange-500">
                             <span style="font-family: Arizona Bold"
                                 >Yoo Sung Lee</span
                             ></a
                         >
-                        and I'm a brand designer and creative technologist.
+                        and I'm a brand & visual designer.
                         <!-- <a
                             target="blank"
                             class="hover:text-blue-500"
@@ -156,7 +156,7 @@
                             on:mouseout={() => (isMouseOver = false)}
                         >
                             {#if isMouseOver}
-                                <span class="text-blue-500">art</span>
+                                <span class="text-orange-500">art</span>
                             {:else}
                                 <i class="fa-solid fa-pencil"></i>
                             {/if}
@@ -171,7 +171,7 @@
                             class=""
                         >
                             {#if isMouseOver2}
-                                <span class="text-blue-500">code.</span>
+                                <span class="text-orange-500">code.</span>
                             {:else}
                                 <i class="fa-solid fa-bug"></i>
                                 <i class="fa-solid fa-terminal"></i> .
@@ -197,7 +197,7 @@
                                             duration: 800,
                                             delay: 100,
                                         }}
-                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                        class="flex flex-row justify-center bg-gray-10 rounded-sm md:-mx-24 p-0.5"
                                     >
                                         <a
                                             href="/projects/stickq"
@@ -256,13 +256,13 @@
                                                 <a href="/projects/stickq">
                                                     <h1>StickQ's</h1>
                                                 </a>
-                                                <p class="text-slate-400">
+                                                <p class="text-slate-700">
                                                     2023
                                                 </p>
                                             </div>
 
                                             <div
-                                                class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                                class="flex space-x-3 text-slate-700 mt-1 md:justify-end justify-normal"
                                             >
                                                 <div class="">
                                                     <p
@@ -299,7 +299,7 @@
                             >
                                 <div class="flex flex-col gap-2">
                                     <div
-                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                        class="flex flex-row justify-center bg-gray-10 rounded-sm md:-mx-24 p-0.5"
                                     >
                                         <a
                                             href="/projects/lxd"
@@ -327,11 +327,11 @@
                                             <a href="/projects/lxd">
                                                 <h1>LXD Conference Rebrand</h1>
                                             </a>
-                                            <p class="text-slate-400">2023</p>
+                                            <p class="text-slate-700">2023</p>
                                         </div>
 
                                         <div
-                                            class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                            class="flex space-x-3 text-slate-700 mt-1 md:justify-end justify-normal"
                                         >
                                             <div class="">
                                                 <p
@@ -363,7 +363,7 @@
                         <!-- <span in:fade = {{ duration:1000, delay:200}}>
                                 <div in:fly = {{ y: 200, duration: 1000, delay:200}} class="contentBlock">
                                     <div class="flex flex-col gap-2">
-                                        <div class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5">
+                                        <div class="flex flex-row justify-center bg-gray-10 rounded-sm md:-mx-24 p-0.5">
                                             <a href="/projects/neek"> <img alt='neek thumbnail' width="2400" height="1260" class="object-contain rounded-sm" src="/g.png"> </a>
     
                                         </div>
@@ -389,7 +389,7 @@
                                             duration: 800,
                                             delay: 100,
                                         }}
-                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                        class="flex flex-row justify-center bg-gray-10 rounded-sm md:-mx-24 p-0.5"
                                     >
                                         <a
                                             href="/projects/mielgo"
@@ -491,13 +491,13 @@
                                                         Design Hero | Mielgo
                                                     </h1>
                                                 </a>
-                                                <p class="text-slate-400">
+                                                <p class="text-slate-700">
                                                     2022
                                                 </p>
                                             </div>
 
                                             <div
-                                                class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                                class="flex space-x-3 text-slate-700 mt-1 md:justify-end justify-normal"
                                             >
                                                 <div class="">
                                                     <p
@@ -537,7 +537,7 @@
                                             duration: 800,
                                             delay: 100,
                                         }}
-                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                        class="flex flex-row justify-center bg-gray-10 rounded-sm md:-mx-24 p-0.5"
                                     >
                                         <a
                                             href="/projects/wip"
@@ -596,11 +596,11 @@
                                             <a href="/projects/stickq">
                                                 <h1>Future of Shared Spaces</h1>
                                             </a>
-                                            <p class="text-slate-400">2024</p>
+                                            <p class="text-slate-700">2024</p>
                                         </div>
 
                                         <div
-                                            class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                            class="flex space-x-3 text-slate-700 mt-1 md:justify-end justify-normal"
                                         >
                                             <div class="">
                                                 <p
@@ -633,7 +633,7 @@
                                             duration: 800,
                                             delay: 100,
                                         }}
-                                        class="flex flex-row justify-center bg-gray-50 rounded-sm md:-mx-24 p-0.5"
+                                        class="flex flex-row justify-center bg-gray-10 rounded-sm md:-mx-24 p-0.5"
                                     >
                                         <a
                                             href="/projects/wip"
@@ -692,11 +692,11 @@
                                             <a href="/projects/stickq">
                                                 <h1>1->3</h1>
                                             </a>
-                                            <p class="text-slate-400">2024</p>
+                                            <p class="text-slate-700">2024</p>
                                         </div>
 
                                         <div
-                                            class="flex space-x-3 text-slate-400 mt-1 md:justify-end justify-normal"
+                                            class="flex space-x-3 text-slate-700 mt-1 md:justify-end justify-normal"
                                         >
                                             <div class="">
                                                 <p

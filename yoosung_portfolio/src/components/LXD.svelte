@@ -196,7 +196,7 @@
                             
                             <div class="text-white">{createPhysicsEngine(canvasContainer)} </div>
                             <div class="mx-auto pb-2">
-                                <p class="bg-yellow-400 w-24 rounded-t-md text-white text-center"> play on me!</p>
+                                <p class="bg-yellow-400 w-24 rounded-t-md text-white text-center"> play with me!</p>
                             </div>
                                 
                                 <div class="flex justify-center">
