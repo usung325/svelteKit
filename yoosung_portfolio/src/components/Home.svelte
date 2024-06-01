@@ -606,7 +606,7 @@
                                                 <p
                                                     class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                 >
-                                                    Iconography
+                                                    Design System
                                                 </p>
                                             </div>
                                             <div class="">
