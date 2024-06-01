@@ -27,11 +27,8 @@
                         </h1>
 
                         <p class="pt-2">
-                            After my time @Carneige Mellon University where I
-                            studied Communication Design & Photography, I
-                            developed a proficiency in designs that work with
-                            data and code. As a visual curator I transform a
-                            brand's values and voices into compelling digital
+                            After my time @Carnegie Mellon University studying Communication Design, I've developed a passion for crafting graphics/systems that reflect its users. As a visual curator I transform a
+                            brand's values and voices into compelling print and digital
                             experiences.
                         </p>
 
@@ -56,7 +53,7 @@
 
                         <p class="pt-2">
                             Outside of the digital world, I enjoy spending time
-                            cooking, woodworking or making my own jewlery.
+                            cooking, creative coding, or collecting trinkets.
                         </p>
                     </div>
                     <div class="w-full pt-8">
