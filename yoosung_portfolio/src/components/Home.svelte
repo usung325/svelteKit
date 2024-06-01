@@ -552,7 +552,7 @@
                                                 width="2400"
                                                 height="1260"
                                                 class="object-contain rounded-sm"
-                                                src="/dinner.png"
+                                                src="/muse.png"
                                             /></a
                                         >
                                         <!--                                             
@@ -593,8 +593,8 @@
                                         <div
                                             class="text-left flex items-baseline space-x-2"
                                         >
-                                            <a href="/projects/stickq">
-                                                <h1>Future of Shared Spaces</h1>
+                                            <a href="/projects/wip">
+                                                <h1>Muse AI</h1>
                                             </a>
                                             <p class="text-slate-700">2024</p>
                                         </div>
@@ -606,14 +606,14 @@
                                                 <p
                                                     class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                 >
-                                                    Interactive Media
+                                                    Iconography
                                                 </p>
                                             </div>
                                             <div class="">
                                                 <p
                                                     class="rounded-md outline-offset-1 outline outline-[1px] px-2"
                                                 >
-                                                    User Research
+                                                    Illustration
                                                 </p>
                                             </div>
                                         </div>
