@@ -313,7 +313,7 @@
                                                 width="2400"
                                                 height="1260"
                                                 class="object-contain rounded-sm"
-                                                src="/lxd.png"
+                                                src="/lxdYellow.png"
                                             />
                                         </a>
                                     </div>
