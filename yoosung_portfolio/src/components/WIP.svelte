@@ -6,7 +6,7 @@
     <div class="items-center text-center mt-[25%] mx-atuo ">
         <div class="space-y-4">
             <div>
-                <p>Work in Progress</p>
+                <p>Currently in the Works...</p>
             </div>
             <div>
                 <i class="fa-solid fa-arrows-rotate fa-spin"></i>
