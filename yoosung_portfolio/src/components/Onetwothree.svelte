@@ -14,7 +14,7 @@
         <!-- <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
         <!-- <div class="flex flex-col gap-8 pb-8"> -->
         <div class="z-10 col-start-1 row-start-1 mt-8 mb-3">
-            <a href="/" class="text-slate-200 text-xl hover:text-[#009EB1]">
+            <a href="/" class="text-slate-200 text-xl hover:text-[#F965C4]">
                 <i class="fa-solid fa-house-chimney"></i>
             </a>
         </div>
@@ -302,7 +302,7 @@
             </div>
 
             <div class="-mb-6 mt-6">
-                <h2 class="bg-[#009EB1] text-white p-3 rounded-t-md">
+                <h2 class="bg-[#F965C4] text-white p-3 rounded-t-md">
                     Closing
                 </h2>
             </div>
