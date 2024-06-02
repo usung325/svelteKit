@@ -81,8 +81,7 @@
                 Over four events, we served food to 60+ guests. In my role, I led
                 the
                 <span class="font-semibold"
-                    >art direction of the branding, maintained and updated the
-                    website and Instagram, and led our first event.
+                    >art direction of the logo, interactive data visualization, produced graphics for the web and printed media, and led our third event.
                 </span>
             </p>
 
