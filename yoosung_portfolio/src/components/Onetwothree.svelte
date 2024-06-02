@@ -66,7 +66,7 @@
                     target="blank"
                     alt="website to alberto mielgo"
                     href="https://www.instagram.com/1to3place/"
-                    class="text-white bg-[#009EB1] p-0.5 rounded-lg hover:bg-blue-500 hover:transition"
+                    class="text-white bg-[#009EB1] p-0.5 rounded-lg hover:bg-[#F965C4] hover:transition"
                     >1->3</a
                 > (pronounced “one to three”) is a free pop-up restaurant hosted
                 in my apartment serving Vietnamese, Colombian, and Korean street
@@ -315,7 +315,7 @@
 
             <div>
                 <p>
-                    <a href="/" class=" hover:text-[#009EB1]"
+                    <a href="/" class=" hover:text-[#F965C4]"
                         ><i class="fa-solid fa-arrow-up fa-rotate-270"></i> Thank
                         you!
                     </a>
