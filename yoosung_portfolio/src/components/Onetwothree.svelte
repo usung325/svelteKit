@@ -216,7 +216,7 @@
                 <p>
                     We created a website to provide information on the event and
                     our mission to create a third place in our apartment. We
-                    created 3 different translation pages alongside english to
+                    created 3 different translation pages alongside English to
                     help people access information in all 3 of our culture's
                     native languages.
                 </p>
@@ -269,14 +269,14 @@
                 <br />
 
                 <p>
-                    An instragram presence to update our followers on future
+                    An instagram presence to update our followers on future
                     events and RSVPs. We made a total of 15 posts including: 5
-                    Event Posts, Menus, Meet the Roomies, and informations about
+                    Event Posts, Menus, Meet the Roomies, and information about
                     the project.
                 </p>
                 <br />
                 <p>
-                    We also had 5 different profile pictures for the coorelating
+                    We also had 5 different profile pictures for the correlating
                     theme of each of the 4 events + one default profile picture.
                 </p>
             </div>
@@ -307,7 +307,7 @@
 
                 <p>
                     Listings of the menu options we had for each event. All of
-                    them were posted on the instagram alongside the email we
+                    them were posted on instagram alongside the email we
                     sent out to all participants.
                 </p>
             </div>
