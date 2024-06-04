@@ -5,7 +5,7 @@
 
     let pfpList = ["pfp1", "pfp2", "pfp3", "pfp4", "pfp5"];
     let menuList = ["menu1", "menu2", "menu3", "menu4"];
-    let polaroids = ['polaroid6', 'polaroid7', 'polaroid8', 'polaroid10'];
+    let polaroids = ["polaroid6", "polaroid7", "polaroid8", "polaroid10"];
 </script>
 
 <SectionWrapper>
@@ -126,7 +126,13 @@
             </div>
 
             <div>
-                <img src="/onetwothree/logo.gif" alt="poster" />
+                <img
+                    src="/onetwothree/logo.gif"
+                    alt="poster"
+                    width="2400"
+                    height="1260"
+                    class="rounded-sm"
+                />
             </div>
 
             <!-- <div class="grid grid-cols-3 gap-2">
@@ -307,6 +313,52 @@
             </div>
 
             <div class="-mb-6 mt-6">
+                <h2 class="bg-[#009EB1] text-white p-3 rounded-t-md">
+                    Data Vis
+                </h2>
+            </div>
+
+            <div>
+                <img
+                    src="/onetwothree/visualizerDemo1.gif"
+                    alt="poster"
+                    width="2400"
+                    height="1260"
+                    class="rounded-sm"
+                />
+            </div>
+
+            <!-- <div class="grid grid-cols-3 gap-2">
+                <img
+                        alt="gifs"
+                        src="/onetwothree/variable1.mov"
+                        width="2400"
+                        height="1260"
+                        class="rounded-sm"
+                    />
+            </div> -->
+
+            <div>
+                <div class="text-slate-400">
+                    <p>Tools: javascript, p5.js</p>
+                    <p>Duration: 4 Events</p>
+                </div>
+
+                <br />
+
+                <p>
+                    I thought it would be interesting to have a 'footprint' of
+                    the conversations from all 4 events but did not want to
+                    record anything to ensure both the privacy of our guests and the quality of our conversations.
+                </p>
+                <br />
+                <p>
+                    As a result, I created this audio visualizer that captured 4
+                    unique 'portraits' of each event that visually narrates where our event started, picked up, and fluctuated based on the overall volume captured from my laptop.
+                </p>
+            </div>
+
+            <div class="-mb-6 mt-6">
                 <h2 class="bg-[#F965C4] text-white p-3 rounded-t-md">
                     Closing
                 </h2>
@@ -339,9 +391,7 @@
 
             <div class="bg-white -my-40 z-10 h-48">
                 <div class="mx-auto w-full text-center">
-
-                        <i class="fa-solid fa-caret-up text-[#F965C4] pt-5"></i>
-
+                    <i class="fa-solid fa-caret-up text-[#F965C4] pt-5"></i>
                 </div>
             </div>
 
