@@ -5,10 +5,11 @@
 
     let pfpList = ["pfp1", "pfp2", "pfp3", "pfp4", "pfp5"];
     let menuList = ["menu1", "menu2", "menu3", "menu4"];
+    let polaroids = ['polaroid7', 'polaroid7', 'polaroid7']
 </script>
 
 <SectionWrapper>
-    <div id="mielgo">
+    <div id="onetwothree">
         <!-- <div class="md:flex md:flex-row md:justify-center"> -->
         <!-- <div class=" md:min-w-[512px] md:w-full md:max-w-xl"> -->
         <!-- <div class="flex flex-col justify-start max-w-xl px-8 py-24 "> -->
@@ -69,7 +70,7 @@
                     class="text-white bg-[#009EB1] p-0.5 rounded-lg hover:bg-[#F965C4] hover:transition"
                     >1->3</a
                 > (pronounced “one to three”) is a free pop-up restaurant hosted
-                in my apartment serving Vietnamese, Colombian, and Korean street
+                at my apartment serving Vietnamese, Colombian, and Korean street
                 food.
             </h1>
             <p>
@@ -78,10 +79,12 @@
                     >(social environments that cultivate community)</span
                 >
                 can bring people together without the obligation of spending money.
-                Over four events, we served food to 60+ guests. In my role, I led
-                the
+                Over four events, we (the roomies) served food to 60+ guests. In
+                my role, I led the
                 <span class="font-semibold"
-                    >art direction of the logo, interactive data visualization, produced graphics for the web and printed media, and led our third event.
+                    >art direction of the logo, interactive data visualization,
+                    produced graphics for the web and printed media, and led our
+                    third event.
                 </span>
             </p>
 
@@ -297,7 +300,9 @@
                 <br />
 
                 <p>
-                    Listings of the menu options we had for each event. All of them were posted on the instagram alongside the email we sent out to all participants.
+                    Listings of the menu options we had for each event. All of
+                    them were posted on the instagram alongside the email we
+                    sent out to all participants.
                 </p>
             </div>
 
@@ -308,9 +313,29 @@
             </div>
 
             <p>
-                This project started as a small joke of having an apartment restaurant to make free food for our friends. As we progressed through 1->3 we saw how enriching of an experience this turned out to be for both the 'customers' and the 'chefs'. Everyone's willingness to connect with strangers in a new space over a table of food was something that we three roomies found very fulfilling and inspiring.
+                This project started as a small joke of having an apartment
+                restaurant to make free food for our friends. As we progressed
+                through 1->3 we saw how enriching of an experience this turned
+                out to be for both the 'customers' and the 'chefs'. Everyone's
+                willingness to connect with strangers in a new space over a
+                table of food was something that we three roomies found very
+                fulfilling and inspiring.
             </p>
-            <p>We hope that this project encourages you to host your own 1->3 within your apartments and homes :)</p>
+            <p>
+                We hope that this project encourages you to host your own 1->3
+                within your apartments and homes :)
+            </p>
+
+            <div class="flex -space-x-14 justify-center">
+                {#each polaroids as polaroid}
+                    <img
+                        alt="other"
+                        src="/onetwothree/{polaroid}.png"
+                        class="hover:transition ease-in-out hover:scale-110 duration-300 hover:-translate-y-10"
+                        width="130em"
+                    />
+                {/each}
+            </div>
 
             <div>
                 <p>
