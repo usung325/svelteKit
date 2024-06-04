@@ -34,7 +34,7 @@
             <div class="flex flex-col text-slate-500 -mt-8">
                 <p>
                     <i class="fa-solid fa-toolbox"></i> Figma, Illustrator, Photoshop,
-                    GLyphs 3, Javascript
+                    Glyphs 3, Javascript
                 </p>
                 <p>
                     <i class="fa-solid fa-wand-magic-sparkles"></i> Visual Identity,
