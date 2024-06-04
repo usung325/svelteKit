@@ -5,7 +5,7 @@
 
     let pfpList = ["pfp1", "pfp2", "pfp3", "pfp4", "pfp5"];
     let menuList = ["menu1", "menu2", "menu3", "menu4"];
-    let polaroids = ['polaroid7', 'polaroid7', 'polaroid7']
+    let polaroids = ['polaroid6', 'polaroid7', 'polaroid8', 'polaroid10'];
 </script>
 
 <SectionWrapper>
@@ -331,13 +331,16 @@
                     <img
                         alt="other"
                         src="/onetwothree/{polaroid}.png"
-                        class="hover:transition ease-in-out hover:scale-110 duration-300 hover:-translate-y-10"
-                        width="130em"
+                        class="hover:transition ease-in-out hover:scale-110 duration-300 hover:-translate-y-36 drop-shadow-sm"
+                        width="160em"
                     />
                 {/each}
             </div>
 
-            <div>
+            <div class="bg-white -my-40 z-10 h-48 ">
+            </div>
+
+            <div class="z-20">
                 <p>
                     <a href="/" class=" hover:text-[#F965C4]"
                         ><i class="fa-solid fa-arrow-up fa-rotate-270"></i> Thank
