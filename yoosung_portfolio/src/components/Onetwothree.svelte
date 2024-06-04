@@ -337,7 +337,12 @@
                 {/each}
             </div>
 
-            <div class="bg-white -my-40 z-10 h-48 ">
+            <div class="bg-white -my-40 z-10 h-48">
+                <div class="mx-auto w-full text-center">
+
+                        <i class="fa-solid fa-caret-up text-[#F965C4] pt-5"></i>
+
+                </div>
             </div>
 
             <div class="z-20">
